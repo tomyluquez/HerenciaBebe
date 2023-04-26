@@ -2,6 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import toggleMenuReducer from "../opens";
+import DatosComercioReducer from "../datosComercio";
 
 const persistConfig = {
   key: "root",
@@ -14,6 +15,7 @@ const persistedToggleMenues = persistReducer(persistConfig, toggleMenuReducer);
 export const store = configureStore({
   reducer: {
     toggleMenues: persistedToggleMenues,
+    datosComerio: DatosComercioReducer,
   },
 });
 
