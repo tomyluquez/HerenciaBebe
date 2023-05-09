@@ -4,6 +4,12 @@ import { colorBlanco, colorPrincipal } from "../../styles/generalStyles";
 export const SliderStyled = styled.div`
   width: 100%;
   overflow: hidden;
+  @media screen and (min-width: 700px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    aling-items: center;
+  }
 
   .slick-list {
     position: relative;
@@ -40,15 +46,15 @@ export const SliderStyled = styled.div`
 
 export const TitleMain = styled.h2`
   text-align: center;
-  margin-top: 7rem;
+  margin-top: 3rem;
   color: ${colorBlanco};
-  @media screen and (max-width: 700px) {
-    margin-top: 3rem;
-  }
 `;
 
 export const CenterSlider = styled.section`
   margin: 0 !important;
+  @media screen and (min-width: 700px) {
+    width: 400px;
+  }
 `;
 
 export const DivImg = styled.div`
@@ -86,10 +92,10 @@ export const NameProduct = styled.p`
 export const DivPrices = styled.div`
   width: 100%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
-  padding: 0 10px 0 20px;
   gap: 1.5rem;
+  text-align: center;
   > p:first-child {
     font-size: 1.5rem;
     margin: 0 !important;
@@ -103,7 +109,7 @@ export const DivPrices = styled.div`
 `;
 
 export const DivDescuento = styled.div`
-  width: 40px;
+  width: 50px;
   height: 20px;
   background-color: ${colorBlanco};
   color: ${colorPrincipal};
@@ -189,5 +195,23 @@ export const ButtonDisabled = styled(ButtonAddToCart)`
   }
   :hover > ${ButtonText} {
     color: ${colorBlanco};
+  }
+`;
+
+export const DivContainterNameProd = styled.div`
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const DivDescuentoInProd = styled(DivDescuento)`
+  top: 320px;
+  right: 20px;
+  height: 30px;
+  @media screen and (min-width: 700px) {
+    right: 505px;
+    top: 95px;
   }
 `;

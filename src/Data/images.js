@@ -6,16 +6,16 @@ export const images = [
 ];
 
 export const imgsCategories = [
-  "./banner1.png",
-  "./banner2.png",
-  "./banner3.png",
-  "./banner4.png",
-  "./banner5.png",
-  "./banner6.png",
-  "./banner7.png",
-  "./banner8.png",
-  "./banner9.png",
-  "./banner10.png",
-  "./banner11.png",
-  "./banner12.png",
+  { src: "./3.png", value: "ajuares" },
+  { src: "./4.png", value: "body" },
+  { src: "./5.png", value: "pantalones" },
+  { src: "./6.png", value: "conjuntos" },
+  { src: "./7.png", value: "enteritos" },
+  { src: "./8.png", value: "tejidos" },
+  { src: "./9.png", value: "accesorios" },
+  { src: "./10.png", value: "remeras" },
+  { src: "./11.png", value: "buzos" },
+  { src: "./12.png", value: "baberos" },
+  { src: "./13.png", value: "vestidos" },
+  { src: "./14.png", value: "amigurumis" },
 ];

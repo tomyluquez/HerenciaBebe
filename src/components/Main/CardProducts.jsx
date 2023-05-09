@@ -9,28 +9,31 @@ import {
 } from "../../styles/Main/destacados";
 import AddToCart from "../AddToCart";
 import PropTypes from "prop-types";
+import useGetPromoPrice from "../../Hooks/useGetPromoPrice";
 
 const CardProducts = ({ prod }) => {
   const [talleSelected, setTalleSelected] = useState(null);
   const stockProd = prod.talles[talleSelected];
+  const promoPrice = useGetPromoPrice(prod.price, prod.descuento);
 
   return (
     <DivImg>
-      <DivDescuento>40%off</DivDescuento>
+      <DivDescuento>{prod.descuento}%off efectivo</DivDescuento>
       <ImgDestacados src={prod.fotos[0]} alt="" />
       <NameProduct>{prod.name}</NameProduct>
       <DivPrices>
-        <p>${prod.promoPrice}</p>
+        <p>${promoPrice}</p>
         <p>${prod.price}</p>
       </DivPrices>
       <DivTalles>
-        <label htmlFor="talles">Talle</label>
+        <span>Talle</span>
         <select
           id="talles"
           name="talle"
           onChange={(e) => setTalleSelected(e.target.value)}
+          defaultValue=""
         >
-          <option value="" disabled selected>
+          <option value="" disabled>
             Seleccione un talle
           </option>
           {Object.keys(prod.talles).map((talle) => (
@@ -40,7 +43,7 @@ const CardProducts = ({ prod }) => {
           ))}
         </select>
       </DivTalles>
-      <AddToCart stock={stockProd} />
+      <AddToCart stock={stockProd} talleSelected={talleSelected} prod={prod} />
     </DivImg>
   );
 };

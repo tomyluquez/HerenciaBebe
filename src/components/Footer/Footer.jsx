@@ -6,7 +6,7 @@ import Envios from "./Envios";
 
 const Footer = () => {
   const { phone, mail, formasPago, instagram, envios } = useSelector(
-    (state) => state.datosComerio
+    (state) => state.datosComercio
   );
   return (
     <DivContainerFooter>

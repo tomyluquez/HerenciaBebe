@@ -3,6 +3,10 @@ import { persistReducer, persistStore } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import toggleMenuReducer from "../opens";
 import DatosComercioReducer from "../datosComercio";
+import filtersSelectedReducer from "../filters";
+import productsReducer from "../productsSlice";
+import cartReducer from "../cartSlices";
+import userReducer from "../userSlices";
 
 const persistConfig = {
   key: "root",
@@ -11,11 +15,16 @@ const persistConfig = {
 };
 
 const persistedToggleMenues = persistReducer(persistConfig, toggleMenuReducer);
+const persistedCart = persistReducer(persistConfig, cartReducer);
 
 export const store = configureStore({
   reducer: {
     toggleMenues: persistedToggleMenues,
-    datosComerio: DatosComercioReducer,
+    datosComercio: DatosComercioReducer,
+    filtersSelected: filtersSelectedReducer,
+    productsState: productsReducer,
+    cart: persistedCart,
+    user: userReducer,
   },
 });
 

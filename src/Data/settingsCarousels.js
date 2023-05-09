@@ -53,3 +53,34 @@ export const settingsDestacados = {
     },
   ],
 };
+
+export const settingsProdSelected = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToScroll: 3,
+        infinite: true,
+        dots: false,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};

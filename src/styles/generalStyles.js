@@ -13,6 +13,8 @@ export const GeneralStyles = createGlobalStyle`
         font-family:'montserrat alternates';
         overflow-x: hidden;
         background-color: ${colorPrincipal};
+        height: 100%;
+        min-height: 100vh;
     }
     li{
         list-style-type: none;

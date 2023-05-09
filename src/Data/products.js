@@ -1,9 +1,10 @@
-export const products = [
+export let products = [
   {
     name: "Ajuar 4 piezas estrellas",
-    sku: "#0022",
+    sku: "0022",
     price: 7050,
-    promoPrice: 5992,
+    promo: false,
+    descuento: 0,
     talles: {
       "talle 1": 1,
     },
@@ -16,9 +17,10 @@ export const products = [
   },
   {
     name: "Body almendra",
-    sku: "#0072",
+    sku: "0072",
     price: 4359,
-    promoPrice: 2619,
+    promo: false,
+    descuento: 0,
     talles: {
       "3-6 Meses": 1,
       "6-9 Meses": 1,
@@ -29,16 +31,16 @@ export const products = [
       "../Products/Body Almendra.jpeg",
       "../Products/Body Almendra2.jpeg",
       "../Products/Body Almendra3.jpeg",
-      "../Products/Body Almendra4.jpeg",
     ],
     category: "body",
     temporada: "atemporal",
   },
   {
     name: "Body MC Lorenzo",
-    sku: "#0098",
+    sku: "0098",
     price: 2899,
-    promoPrice: 1749,
+    promo: true,
+    descuento: 40,
     talles: {
       "3-6 Meses": 1,
       "6-12 Meses": 1,
@@ -56,9 +58,10 @@ export const products = [
   },
   {
     name: "Short panal Kale",
-    sku: "#0048",
+    sku: "0048",
     price: 3529,
-    promoPrice: 2119,
+    promo: true,
+    descuento: 40,
     talles: {
       "12-18 Meses": 1,
       "18-24 Meses": 1,
@@ -74,9 +77,10 @@ export const products = [
   },
   {
     name: "Conjunto Helena Camel",
-    sku: "#0036",
+    sku: "0036",
     price: 6709,
-    promoPrice: 4029,
+    promo: true,
+    descuento: 40,
     talles: {
       "6-9 Meses": 1,
       "9-12 Meses": 1,
@@ -94,9 +98,10 @@ export const products = [
   },
   {
     name: "Enterito Lino Celeste",
-    sku: "#0044",
+    sku: "0044",
     price: 6809,
-    promoPrice: 5699,
+    promo: true,
+    descuento: 40,
     talles: {
       "9 Meses": 1,
       "18 Meses": 1,
@@ -109,14 +114,15 @@ export const products = [
       "../Products/Enterito Lino Celeste2.jpeg",
       "../Products/Enterito Lino Celeste3.jpeg",
     ],
-    category: "conjuntos",
+    category: "enteritos",
     temporada: "verano",
   },
   {
     name: "Cardigan Arena",
-    sku: "#0051",
+    sku: "0051",
     price: 7049,
-    promoPrice: 5999,
+    promo: false,
+    descuento: 0,
     talles: {
       "3-6 Meses": 1,
     },
@@ -131,12 +137,12 @@ export const products = [
   },
   {
     name: "Portachupetes",
-    sku: "#0103",
+    sku: "0103",
     price: 1179,
-    promoPrice: 999,
+    promo: false,
+    descuento: 0,
     talles: {
-      Naturaleza: 2,
-      Animalitos: 2,
+      Unico: 4,
     },
     color: "Estampados",
     descripcion: "Portachupetes",
@@ -152,9 +158,10 @@ export const products = [
   },
   {
     name: "Remera Lino Beige",
-    sku: "#0113",
+    sku: "0113",
     price: 5529,
-    promoPrice: 3319,
+    promo: true,
+    descuento: 40,
     talles: {
       "6 Meses": 2,
       "9 Meses": 1,
@@ -175,9 +182,10 @@ export const products = [
   },
   {
     name: "Buzo Pecas Celeste",
-    sku: "#0077",
+    sku: "0077",
     price: 7179,
-    promoPrice: 6099,
+    promo: false,
+    descuento: 0,
     talles: {
       "18 Meses": 1,
       "24 Meses": 1,
@@ -194,9 +202,10 @@ export const products = [
   },
   {
     name: "Buzo Pecas Natural",
-    sku: "#0077",
+    sku: "0078",
     price: 7179,
-    promoPrice: 6099,
+    promo: false,
+    descuento: 0,
     talles: {
       "18 Meses": 1,
       "24 Meses": 1,
@@ -213,9 +222,10 @@ export const products = [
   },
   {
     name: "Babero triangulo Celeste",
-    sku: "#0096",
+    sku: "0096",
     price: 1529,
-    promoPrice: 1299,
+    promo: false,
+    descuento: 0,
     talles: {
       Unico: 1,
     },
@@ -230,9 +240,10 @@ export const products = [
   },
   {
     name: "Vestido Hortensias",
-    sku: "#0205",
+    sku: "0205",
     price: 6709,
-    promoPrice: 4029,
+    promo: true,
+    descuento: 40,
     talles: {
       "12 Meses": 1,
       "24 Meses": 1,
@@ -246,6 +257,6 @@ export const products = [
       "../Products/Vestido Hortensias3.jpeg",
     ],
     category: "vestidos",
-    temporada: "vestidos",
+    temporada: "verano",
   },
 ];

@@ -34,6 +34,12 @@ export const NavBar = styled.nav`
   z-index: 1001;
   position: fixed;
   padding-top: 23px;
+  @media screen and (min-width: 700px) {
+    img:first-of-type {
+      margin-left: ${({ logginUser }) => (logginUser ? "170px" : "110px;")};
+      cursor: pointer;
+    }
+  }
 `;
 
 export const MenuSt = styled.div`
@@ -56,7 +62,7 @@ export const UlMenu = styled.ul`
     top: 83px;
     left: 0px;
     width: 100%;
-    height: ${({ menuOpen }) => (menuOpen ? "150px" : "0")};
+    height: ${({ menuOpen }) => (menuOpen ? "220px" : "0")};
     justify-content: center;
     padding-top: 0px;
     margin: 0;
@@ -164,6 +170,7 @@ export const IconCart = styled(AiOutlineShoppingCart)`
   color: ${colorBlanco};
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  position: relative;
   :hover {
     transform: scale(1.1);
   }
@@ -196,5 +203,22 @@ export const MenuLi = styled.li`
     to {
       transform: scaleX(1);
     }
+  }
+`;
+
+export const SpanCart = styled.span`
+  text-align: center;
+  vertical-align: inherit;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  background: ${colorPrincipal};
+  color: ${colorBlanco};
+  padding: 2px 5px;
+  border-radius: 50%;
+  width: 12px;
+  border: 1px solid ${colorBlanco};
+  @media screen and (min-width: 700px) {
+    right: ${({ logginUser }) => (logginUser ? "90px" : "115px")};
   }
 `;

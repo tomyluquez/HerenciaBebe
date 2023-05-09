@@ -7,7 +7,7 @@ export const DivContainerFooter = styled.footer`
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   padding: 10px 0 40px 20px;
-  margin-top: 120px;
+  margin-top: 20px;
 
   @media screen and (max-width: 700px) {
     grid-template-columns: repeat(1, 1fr);

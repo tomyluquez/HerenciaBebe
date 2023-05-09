@@ -28,7 +28,7 @@ const Contacto = ({ datosContacto: [mail, phone, instagram] }) => {
         >
           <DivIconAndText>
             <BsWhatsapp />
-            <p>Whatsapp</p>
+            <p>Whatsapp {phone}</p>
           </DivIconAndText>
         </a>
         <a
@@ -38,7 +38,7 @@ const Contacto = ({ datosContacto: [mail, phone, instagram] }) => {
         >
           <DivIconAndText>
             <BsInstagram />
-            <p>Instagram</p>
+            <p>Instagram - @herencia.bb</p>
           </DivIconAndText>
         </a>
         <a href={`tel:${phone}`}>

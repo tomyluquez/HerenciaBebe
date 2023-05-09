@@ -1,18 +1,47 @@
-import CardProducts from "../components/Main/CardProducts";
+import { useEffect, useState } from "react";
 import CardProd from "../components/Products/CardProd";
 import Filters from "../components/Products/Filters";
 import Sort from "../components/Products/Sort";
-import { products } from "../Data/products";
-import { DivContainerProducts } from "../styles/Products/productsStyles";
+import {
+  DivContainerFilters,
+  DivContainerGral,
+  DivContainerProducts,
+} from "../styles/Products/productsStyles";
+import { useSelector } from "react-redux";
 
 const Products = () => {
+  const products = useSelector((state) => state.productsState.products);
+  const [isLoading, setIsLoading] = useState(true);
+  const productsFiltered = useSelector(
+    (state) => state.productsState.productsFiltered
+  );
+
+  const [productsList, setProductsList] = useState(null);
+
+  useEffect(() => {
+    if (productsFiltered.length > 0) {
+      setProductsList(productsFiltered);
+    } else {
+      setProductsList(products);
+    }
+    setIsLoading(false);
+  }, [products, productsFiltered]);
+
+  if (isLoading) {
+    return <div>CARGANDO ...</div>;
+  }
+
   return (
     <DivContainerProducts>
-      <Filters productsList={products} />
-      <Sort productsList={products} />
-      {products.map((prod) => (
-        <CardProd key={prod.sku} prod={prod} />
-      ))}
+      <DivContainerFilters>
+        <Sort />
+        <Filters />
+      </DivContainerFilters>
+      <DivContainerGral>
+        {productsList.map((prod) => (
+          <CardProd key={prod.sku} prod={prod} />
+        ))}
+      </DivContainerGral>
     </DivContainerProducts>
   );
 };

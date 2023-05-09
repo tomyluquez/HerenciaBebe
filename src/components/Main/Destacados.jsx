@@ -1,7 +1,6 @@
 import Slider from "react-slick";
 import "../../styles/Main/destacados.css";
 import { settingsDestacados } from "../../Data/settingsCarousels";
-import { products } from "../../Data/products";
 import {
   CenterSlider,
   SliderStyled,
@@ -9,10 +8,8 @@ import {
 } from "../../styles/Main/destacados";
 import CardProducts from "./CardProducts";
 
-const Destacados = () => {
-  const productsFiltered = products.filter(
-    (product) => product.temporada === "verano"
-  );
+const Destacados = ({ products }) => {
+  const productsFiltered = products.filter((product) => product.promo === true);
 
   return (
     <SliderStyled>

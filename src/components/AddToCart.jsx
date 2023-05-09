@@ -1,13 +1,67 @@
+import { useDispatch } from "react-redux";
 import {
-  ButtonAddToCart,
   ButtonDisabled,
   ButtonIcon,
   ButtonSvg,
   ButtonText,
 } from "../styles/Main/destacados";
+import { ButtonSeeMore } from "../styles/Main/categories.Styles";
 import PropTypes from "prop-types";
+import { setStock } from "../redux/productsSlice";
+import { useNavigate } from "react-router";
+import { v4 as uuidv4 } from "uuid";
+import { addProduct } from "../redux/cartSlices";
+import { toggleMenues } from "../redux/opens";
+import { useToast } from "@chakra-ui/react";
 
-const AddToCart = ({ stock }) => {
+const AddToCart = ({ stock, talleSelected, prod }) => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  const toast = useToast();
+
+  const handlerAddToCart = () => {
+    if (!talleSelected) {
+      return toast({
+        title: "Error",
+        description: "Por favor selecicona un talle",
+        status: "error",
+        duration: 2000,
+        isClosable: true,
+      });
+    }
+
+    const newProduct = {
+      name: prod.name,
+      sku: prod.sku,
+      price: prod.price,
+      promo: prod.promo,
+      descuento: prod.descuento,
+      foto: prod.fotos[0],
+      talle: talleSelected,
+      cantidad: 1,
+      uid: uuidv4(),
+    };
+
+    dispatch(addProduct(newProduct));
+    dispatch(
+      setStock({
+        sku: newProduct.sku,
+        talle: newProduct.talle,
+        stock: newProduct.cantidad,
+        accion: "quitar",
+      })
+    );
+    dispatch(toggleMenues("cart"));
+    navigate("/productos");
+    toast({
+      title: "Producto Agregado",
+      description: "El producto se ha agregado correctamente",
+      status: "success",
+      duration: 2000,
+      isClosable: true,
+    });
+  };
+
   if (stock === 0) {
     return (
       <ButtonDisabled disabled>
@@ -17,25 +71,13 @@ const AddToCart = ({ stock }) => {
   }
 
   return (
-    <ButtonAddToCart type="button">
-      <ButtonText>Agregar al Carrito</ButtonText>
-      <ButtonIcon>
-        <ButtonSvg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          stroke="currentColor"
-          height="24"
-          fill="none"
-        >
-          <line y2="19" y1="5" x2="12" x1="12"></line>
-          <line y2="12" y1="12" x2="19" x1="5"></line>
-        </ButtonSvg>
-      </ButtonIcon>
-    </ButtonAddToCart>
+    <ButtonSeeMore
+      type="button"
+      onClick={handlerAddToCart}
+      style={{ width: "300px" }}
+    >
+      Agregar al carrito
+    </ButtonSeeMore>
   );
 };
 AddToCart.propTypes = {

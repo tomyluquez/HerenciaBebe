@@ -9,7 +9,7 @@ const initialState = {
 };
 
 export const openMenuSlice = createSlice({
-  name: "extras",
+  name: "menues",
   initialState,
   reducers: {
     toggleMenues: (state, action) => {

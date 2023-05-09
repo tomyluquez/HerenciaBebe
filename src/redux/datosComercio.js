@@ -6,16 +6,17 @@ const initialState = {
   phone: "3517683067",
   mail: "herencia.bb.cba@gmail.com",
   formasPago: {
-    efectivo: "10%OFF",
-    transferencia: "10%OFF",
-    tarjeta: "3 Cuotas sin interes",
+    efectivo: 10,
+    transferencia: 10,
+    tarjeta: 3,
   },
   instagram: "www.instagram.com/herencia.bb",
   envios: "Envios a todo el pais",
+  enviosGratis: 10000,
 };
 
 export const datosComercio = createSlice({
-  name: "extras",
+  name: "datos",
   initialState,
   reducers: {
     setDato: (state, action) => {

@@ -7,8 +7,14 @@ import Shadow from "./components/Shadow.jsx";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Products from "./pages/Products.jsx";
 import ButtonWhats from "./components/ButtonWhats.jsx";
+import ProductSelected from "./pages/ProductSelected";
+import { useSelector } from "react-redux";
+import Checkout from "./pages/Checkout.jsx";
+import Login from "./pages/Login.jsx";
+import AuthListener from "./components/AuthListener.jsx";
 
 function App() {
+  const products = useSelector((state) => state.productsState.products);
   return (
     <>
       <GeneralStyles />
@@ -16,9 +22,17 @@ function App() {
       <Router>
         <Header />
         <Shadow />
+        <AuthListener />
         <Routes>
-          <Route exact path="/" element={<MainPage />} />
+          <Route exact path="/" element={<MainPage products={products} />} />
           <Route exact path="/productos" element={<Products />} />
+          <Route
+            exact
+            path="/productos/:sku"
+            element={<ProductSelected products={products} />}
+          />
+          <Route exact path="/checkout" element={<Checkout />} />
+          <Route exact path="/login" element={<Login />} />
         </Routes>
       </Router>
       <ButtonWhats />

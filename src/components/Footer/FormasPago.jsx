@@ -14,15 +14,15 @@ const FormasPago = ({ formasPago }) => {
       <DivSecundario>
         <DivIconAndText>
           <MdOutlineAttachMoney />
-          <p>Efectivo: {formasPago.efectivo}</p>
+          <p>Efectivo: {formasPago.efectivo}%OFF</p>
         </DivIconAndText>
         <DivIconAndText>
           <BiTransfer />
-          <p>Transferencia: {formasPago.transferencia}</p>
+          <p>Transferencia: {formasPago.transferencia}%OFF</p>
         </DivIconAndText>
         <DivIconAndText>
           <BsCreditCard />
-          <p>Tarjeta de Credito: {formasPago.tarjeta}</p>
+          <p>Tarjeta de Credito: {formasPago.tarjeta} cuotas sin interes</p>
         </DivIconAndText>
       </DivSecundario>
     </DivContainerDato>
