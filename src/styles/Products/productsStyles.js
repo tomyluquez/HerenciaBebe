@@ -209,3 +209,12 @@ export const DivContainerButton = styled.div`
   }
 }}
 `;
+
+export const DivContainerLoading = styled.div`
+  width: 100%;
+  padding-top: 83px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

@@ -5,32 +5,46 @@ import Sort from "../components/Products/Sort";
 import {
   DivContainerFilters,
   DivContainerGral,
+  DivContainerLoading,
   DivContainerProducts,
 } from "../styles/Products/productsStyles";
 import { useSelector } from "react-redux";
+import { Spinner } from "@chakra-ui/react";
 
 const Products = () => {
   window.scrollTo(0, 0);
-
   const products = useSelector((state) => state.productsState.products);
-  const [isLoading, setIsLoading] = useState(true);
   const productsFiltered = useSelector(
     (state) => state.productsState.productsFiltered
   );
+  const [loading, setLoading] = useState(true);
 
   const [productsList, setProductsList] = useState(null);
 
   useEffect(() => {
+    window.addEventListener("onload", () => {
+      setLoading(false);
+    });
     if (productsFiltered.length > 0) {
       setProductsList(productsFiltered);
     } else {
       setProductsList(products);
     }
-    setIsLoading(false);
+    setLoading(false);
   }, [products, productsFiltered]);
 
-  if (isLoading) {
-    return <div>CARGANDO ...</div>;
+  if (loading) {
+    return (
+      <DivContainerLoading>
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="white"
+          size="xl"
+        />
+      </DivContainerLoading>
+    );
   }
 
   return (

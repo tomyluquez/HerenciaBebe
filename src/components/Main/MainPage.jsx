@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 
 const MainPage = ({ products }) => {
   window.scrollTo(0, 0);
-
   const navigate = useNavigate();
+
   return (
     <MainPpal>
       <Carousel />
