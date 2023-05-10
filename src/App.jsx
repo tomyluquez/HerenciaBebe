@@ -13,34 +13,11 @@ import Checkout from "./pages/Checkout.jsx";
 import Login from "./pages/Login.jsx";
 import AuthListener from "./components/AuthListener.jsx";
 import MisCompras from "./pages/MisCompras.jsx";
-import { Spinner } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
-import { DivContainerLoading } from "./styles/Products/productsStyles.js";
 
 function App() {
   const products = useSelector((state) => state.productsState.products);
   const user = useSelector((state) => state.user);
-  const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    window.addEventListener("load", () => {
-      setLoading(false);
-    });
-  }, []);
-
-  if (loading) {
-    return (
-      <DivContainerLoading>
-        <Spinner
-          thickness="4px"
-          speed="0.65s"
-          emptyColor="gray.200"
-          color="white"
-          size="xl"
-        />
-      </DivContainerLoading>
-    );
-  }
   return (
     <>
       <GeneralStyles />
