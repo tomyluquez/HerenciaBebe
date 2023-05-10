@@ -6,7 +6,7 @@ import {
   arrayUnion,
   updateDoc,
 } from "firebase/firestore";
-import firebaseApp from "../firebase/config";
+import firebaseApp from "../Firebase/config";
 
 const setOrders = async (pedidoFinal) => {
   const firestore = getFirestore(firebaseApp);
