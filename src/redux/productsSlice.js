@@ -78,9 +78,25 @@ export const productsState = createSlice({
       state.products = state.copyOriginalProducts;
       state.productsFiltered = state.copyOriginalProducts;
     },
+    searchProducts: (state, action) => {
+      const search = action.payload;
+      const productsFilteredBySearch = state.copyOriginalProducts.filter(
+        (product) => {
+          return (
+            product.name.includes(search) || product.category.includes(search)
+          );
+        }
+      );
+      state.productsFiltered = productsFilteredBySearch;
+    },
   },
 });
 
-export const { filterProducts, removeFilters, sortedProducts, setStock } =
-  productsState.actions;
+export const {
+  filterProducts,
+  removeFilters,
+  sortedProducts,
+  setStock,
+  searchProducts,
+} = productsState.actions;
 export default productsState.reducer;

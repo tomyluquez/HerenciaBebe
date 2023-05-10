@@ -7,11 +7,11 @@ import { useSelector } from "react-redux";
 
 const Header = () => {
   const navigate = useNavigate();
-  const logginUser = useSelector((state) => state.user.isLogin);
+  const user = useSelector((state) => state.user);
 
   return (
     <header>
-      <NavBar logginUser={logginUser}>
+      <NavBar logginUser={user.isLogin}>
         <InputSearch />
         <Image
           src="/herenciasinfondoGrande.png"
@@ -20,7 +20,7 @@ const Header = () => {
           height={59}
           onClick={() => navigate("/")}
         />
-        <Menu logginUser={logginUser} />
+        <Menu user={user} />
       </NavBar>
     </header>
   );

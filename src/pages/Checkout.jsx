@@ -5,6 +5,8 @@ import CheckoutProducts from "../components/Checkout/CheckoutProducts";
 import { DivContainerGeneral } from "../styles/CheckOut/checkoutStyles";
 
 const Checkout = () => {
+  window.scrollTo(0, 0);
+
   const userActive = useSelector((state) => state.user.isLogin);
   const productsCart = useSelector((state) => state.cart.products);
   const navigate = useNavigate();

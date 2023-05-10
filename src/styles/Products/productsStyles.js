@@ -200,5 +200,12 @@ export const DivContainerButton = styled.div`
   border-top: 1px solid #252525;
   box-shadow: 0 -5px 6px 0 #252525;
   margin-top: 50px;
+  @media screen and (min-width: 700px) {
+    height: 80px;
+    & button {
+      margin: 0;
+      
+    }
+  }
 }}
 `;

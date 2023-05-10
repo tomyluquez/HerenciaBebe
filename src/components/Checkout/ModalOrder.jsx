@@ -6,6 +6,7 @@ import {
   CheckError,
   ButtonLogginModal,
   DivContainerButtonsCO,
+  ModalOrderOK,
 } from "../../styles/CheckOut/checkoutStyles";
 import { Spinner } from "@chakra-ui/react";
 import { ShadowOverlay as ShadowGral } from "../../styles/generalStyles";
@@ -53,7 +54,7 @@ const ModalOrder = ({ pedidoFinal }) => {
   if (request === "creado") {
     return (
       <>
-        <ModalOrderFinal>
+        <ModalOrderFinal request={request}>
           <CheckOk />
           <div style={{ textAlign: "center" }}>
             <PModal> Muchas gracias por tu compra !</PModal>

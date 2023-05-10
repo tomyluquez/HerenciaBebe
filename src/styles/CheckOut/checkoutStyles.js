@@ -26,8 +26,12 @@ export const DivButtons = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 350px;
   gap: 1rem;
+
+  @media screen and (min-width: 700px) {
+    width: 550px;
+  }
 `;
 
 export const ButtonNext = styled(ButtonSeeMore)`
@@ -38,18 +42,26 @@ export const ButtonNext = styled(ButtonSeeMore)`
 
 export const DivProductsSelect = styled.div`
   min-height: 215px;
-  width: 90%;
-  border: 1px solid black;
+  width: 350px;
+  border: 1px solid ${colorBlanco};
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 10px 0;
+
+  @media screen and (min-width: 700px) {
+    width: 550px;
+  }
 `;
 
 export const DivContainerAlert = styled.div`
-  width: 90%;
+  width: 350px;
   text-align: center;
+
+  @media screen and (min-width: 700px) {
+    width: 550px;
+  }
 `;
 
 export const Alert = styled.p`
@@ -99,12 +111,16 @@ export const FormCupones = styled.form`
   min-height: 145px;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   width: 90%;
   text-align: center;
-  gap: 0.4rem;
+  gap: 1.2rem;
   > span:first-child {
     color: white;
+  }
+  & button {
+    margin: 0;
   }
 `;
 
@@ -139,26 +155,44 @@ export const ButtonFinal = styled(ButtonSeeMore)`
 import { BsFillCheckCircleFill, MdError } from "react-icons/all";
 
 export const ModalOrderFinal = styled.div`
-  height: 450px;
+  height: ${({ request }) =>
+    request === "creado" || request === "error" ? "100vh" : "450px"};
   display: flex;
-  background-color: ${colorBlanco};
+  background-color: ${({ request }) => {
+    if (request === "creado") return "green";
+    else if (request === "error") return "red";
+    else return colorBlanco;
+  }};
   position: fixed;
-  max-width: 500px;
+  width: ${({ request }) =>
+    request === "creado" || request === "error" ? "100%" : "250px"};
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1001;
+  z-index: 1002;
   padding: 0 20px;
   min-width: 350px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
   gap: 3rem;
+  @media screen and (min-width: 700px) {
+    width: ${({ request }) =>
+      request === "creado" || request === "error" ? "100%" : "500px"};
+  }
+`;
+
+export const ModalOrderOK = styled(ModalOrderFinal)`
+  height: 100vh;
+  width: 100%;
+  z-index: 1002;
+  background-color: green;
 `;
 
 export const CheckOk = styled(BsFillCheckCircleFill)`
   font-size: 7rem;
-  color: green;
+  color: ${colorBlanco};
 `;
 
 export const CheckError = styled(MdError)`
@@ -167,22 +201,25 @@ export const CheckError = styled(MdError)`
 `;
 
 export const PModal = styled.p`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
+  color: ${colorBlanco};
 `;
 
 export const ButtonLogginModal = styled.button`
-  width: 80%;
+  width: 240px;
+  padding: 2px
   border-radius: 20px;
   height: 30px;
   border: 1px solid ${colorBlanco};
-  background-color: ${colorPrincipal};
+  background-color: green;
   color: ${colorBlanco};
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
   :hover {
     background-color: ${colorBlanco};
-    color: ${colorPrincipal};
+    color: green;
     border: 1px solid ${colorPrincipal};
   }
 `;
@@ -194,4 +231,9 @@ export const DivContainerButtonsCO = styled.div`
   flex-direction: column;
   width: 80%;
   gap: 0.5rem;
+`;
+
+export const InputCupones = styled.input`
+  width: 80%;
+  padding: 5px;
 `;

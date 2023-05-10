@@ -12,9 +12,11 @@ import { useSelector } from "react-redux";
 import Checkout from "./pages/Checkout.jsx";
 import Login from "./pages/Login.jsx";
 import AuthListener from "./components/AuthListener.jsx";
+import MisCompras from "./pages/MisCompras.jsx";
 
 function App() {
   const products = useSelector((state) => state.productsState.products);
+  const user = useSelector((state) => state.user);
   return (
     <>
       <GeneralStyles />
@@ -33,6 +35,11 @@ function App() {
           />
           <Route exact path="/checkout" element={<Checkout />} />
           <Route exact path="/login" element={<Login />} />
+          <Route
+            exact
+            path="/profile/:user/misCompras"
+            element={<MisCompras user={user} />}
+          />
         </Routes>
       </Router>
       <ButtonWhats />

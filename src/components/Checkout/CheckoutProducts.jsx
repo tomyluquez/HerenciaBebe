@@ -21,6 +21,7 @@ import "../../styles/CheckOut/animationsSlider.css";
 import ModalOrder from "./ModalOrder";
 import { useSelector } from "react-redux";
 import generateNumOrder from "../../Services/generateNumOrder";
+import { useToast } from "@chakra-ui/react";
 
 const CheckoutProducts = ({ products }) => {
   const [formaPago, setFormaPago] = useState(null);
@@ -32,31 +33,46 @@ const CheckoutProducts = ({ products }) => {
   const [sliderPosition, setSliderPosition] = useState(1);
   const [modalIsVisible, setModalIsVisible] = useState(null);
   const user = useSelector((state) => state.user);
+  const toast = useToast();
+
+  const handleNext = () => {
+    if (sliderPosition === 2 && !formaPago) {
+      return toast({
+        title: "Error Forma de pago",
+        description: "Por favor selecicona una forma de pago",
+        status: "error",
+        duration: 2000,
+        isClosable: true,
+      });
+    } else if (sliderPosition === 3 && !entrega) {
+      return toast({
+        title: "Error Forma de entrega",
+        description: "Por favor selecicona una forma de entrega",
+        status: "error",
+        duration: 2000,
+        isClosable: true,
+      });
+    }
+
+    setSliderPosition(sliderPosition + 1);
+  };
 
   const handleSubmit = () => {
-    if (!formaPago && !entrega) {
-      return alert("Por favor selecciona la forma de pago y la entrega");
-    } else if (!formaPago && entrega) {
-      return alert("Por favor selecciona la forma de pago");
-    } else if (formaPago && !entrega) {
-      return alert("por favor selecciona una forma de entrega");
-    } else {
-      const date = new Date();
-      const numOrder = generateNumOrder();
-      const pedidoFinal = {
-        products,
-        totalPagar,
-        entrega,
-        formaPago,
-        costoEnvio,
-        numOrder,
-        username: user.name,
-        uid: user.uid,
-        fecha: date.toLocaleDateString(),
-        hora: date.toLocaleTimeString(),
-      };
-      setModalIsVisible(<ModalOrder pedidoFinal={pedidoFinal} />);
-    }
+    const date = new Date();
+    const numOrder = generateNumOrder();
+    const pedidoFinal = {
+      products,
+      totalPagar,
+      entrega,
+      formaPago,
+      costoEnvio,
+      numOrder,
+      username: user.name,
+      uid: user.uid,
+      fecha: date.toLocaleDateString(),
+      hora: date.toLocaleTimeString(),
+    };
+    setModalIsVisible(<ModalOrder pedidoFinal={pedidoFinal} />);
   };
 
   useEffect(() => {
@@ -137,8 +153,8 @@ const CheckoutProducts = ({ products }) => {
         {sliderPosition === 5 ? (
           <ButtonNext onClick={handleSubmit}>Finalizar Compra</ButtonNext>
         ) : (
-          <ButtonNext onClick={() => setSliderPosition(sliderPosition + 1)}>
-            Siguiente
+          <ButtonNext onClick={handleNext}>
+            {sliderPosition === 4 ? "No tengo cupon" : "Siguiente"}
           </ButtonNext>
         )}
       </DivButtons>

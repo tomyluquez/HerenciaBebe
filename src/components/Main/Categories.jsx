@@ -37,7 +37,7 @@ const Categories = () => {
             key={index}
             onClick={() => handlerClickCategory(img)}
           >
-            <ImgCategories src={img.src} alt={img} />
+            <ImgCategories src={img.src} alt={img} loading="lazy" />
             <SpanCategories>{img.value.toUpperCase()}</SpanCategories>
           </DivContainerImgAndSpan>
         ))}

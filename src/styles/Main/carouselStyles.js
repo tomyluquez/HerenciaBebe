@@ -10,7 +10,7 @@ export const StyledCarousel = styled(Slider)`
 
   @media (max-width: 700px) {
     height: 500px;
-    margin: 0 0 50px 0;
+    margin: 0;
   }
 
   .slick-slide {

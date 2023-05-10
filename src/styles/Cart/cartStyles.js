@@ -71,6 +71,7 @@ export const DivContainerImg = styled.div`
     margin: 0 !important;
   }
   @media screen and (min-width: 700px) {
+    width: 35%;
     & img {
       width: 90% !important;
     }

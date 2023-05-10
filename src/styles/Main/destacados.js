@@ -4,12 +4,6 @@ import { colorBlanco, colorPrincipal } from "../../styles/generalStyles";
 export const SliderStyled = styled.div`
   width: 100%;
   overflow: hidden;
-  @media screen and (min-width: 700px) {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    aling-items: center;
-  }
 
   .slick-list {
     position: relative;
@@ -52,9 +46,6 @@ export const TitleMain = styled.h2`
 
 export const CenterSlider = styled.section`
   margin: 0 !important;
-  @media screen and (min-width: 700px) {
-    width: 400px;
-  }
 `;
 
 export const DivImg = styled.div`
@@ -211,7 +202,7 @@ export const DivDescuentoInProd = styled(DivDescuento)`
   right: 20px;
   height: 30px;
   @media screen and (min-width: 700px) {
-    right: 505px;
-    top: 95px;
+    right: 70px;
+    top: 15px;
   }
 `;

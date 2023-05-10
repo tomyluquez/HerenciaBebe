@@ -12,6 +12,7 @@ import { toggleMenues } from "../redux/opens";
 import { useToast } from "@chakra-ui/react";
 
 const ProductSelected = ({ products }) => {
+  window.scrollTo(0, 0);
   const { sku } = useParams();
   const productSelected = useGetproductSelected(sku, products);
   const [talleSelected, setTalleSelected] = useState(null);

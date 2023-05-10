@@ -10,6 +10,8 @@ import {
 import { useSelector } from "react-redux";
 
 const Products = () => {
+  window.scrollTo(0, 0);
+
   const products = useSelector((state) => state.productsState.products);
   const [isLoading, setIsLoading] = useState(true);
   const productsFiltered = useSelector(

@@ -1,5 +1,8 @@
 import React from "react";
-import { FormCupones } from "../../styles/CheckOut/checkoutStyles";
+import {
+  FormCupones,
+  InputCupones,
+} from "../../styles/CheckOut/checkoutStyles";
 import useGetCupon from "../../Hooks/useGetCupon";
 import { ButtonSeeMore } from "../../styles/Main/categories.Styles";
 
@@ -15,7 +18,7 @@ const Cupones = ({ cupon, setCupon }) => {
     <>
       <FormCupones onSubmit={handleCupones}>
         <span>Tenes un cupon de descuento?</span>
-        <input type="text" placeholder="Ingresa el cupon de descuento" />
+        <InputCupones type="text" placeholder="Ingresa el cupon de descuento" />
         {cupon !== "no" ? (
           typeof cupon === "number" ? (
             <span style={{ color: "green" }}>

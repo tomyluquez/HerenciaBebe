@@ -19,7 +19,7 @@ const CardProducts = ({ prod }) => {
   return (
     <DivImg>
       <DivDescuento>{prod.descuento}%off efectivo</DivDescuento>
-      <ImgDestacados src={prod.fotos[0]} alt="" />
+      <ImgDestacados src={prod.fotos[0]} alt="" loading="lazy" />
       <NameProduct>{prod.name}</NameProduct>
       <DivPrices>
         <p>${promoPrice}</p>

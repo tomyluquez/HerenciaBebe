@@ -35,6 +35,16 @@ export const DivSliderProd = styled.div`
   }
 `;
 
+export const DivSlider = styled.div`
+  margin-right: 0;
+  width: 100%;
+  position: relative;
+
+  .slick-slider div {
+    margin: 0;
+  }
+`;
+
 export const NameProduct = styled.h2`
   text-align: center;
   color: ${colorBlanco};
@@ -57,7 +67,7 @@ export const DivContainerCount = styled.div`
   align-items: center;
   gap: 1rem;
   margin-top: 30px;
-  width: 120px;
+  width: 170px;
   background-color: ${colorBlanco};
   padding: 5px 0px;
   border-radius: 30px;

@@ -21,6 +21,7 @@ import {
   DivGeneral,
   DivTallesAndCount,
   DivSliderProd,
+  DivSlider,
 } from "../../styles/Products/ProdInd/prodIndStyles";
 
 const InfoProduct = ({
@@ -67,7 +68,7 @@ const InfoProduct = ({
       </DivContainterName>
 
       <DivSliderProd>
-        <CenterSlider style={{ marginRight: "0" }}>
+        <DivSlider>
           <div>
             <Slider {...settingsProdSelected}>
               {prod.fotos.map((foto, index) => (
@@ -80,7 +81,7 @@ const InfoProduct = ({
               </DivDescuentoInProd>
             )}
           </div>
-        </CenterSlider>
+        </DivSlider>
       </DivSliderProd>
       <DivTallesAndCount>
         <p style={{ textAlign: "center" }}>Descripcion: {prod.descripcion}</p>
