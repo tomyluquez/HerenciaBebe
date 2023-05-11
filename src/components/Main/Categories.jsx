@@ -42,7 +42,10 @@ const Categories = () => {
           </DivContainerImgAndSpan>
         ))}
       </DivContainerCategories>
-      <ButtonSeeMore onClick={() => setSeeMore(!seeMore)}>
+      <ButtonSeeMore
+        onClick={() => setSeeMore(!seeMore)}
+        style={{ marginLeft: "0", marginRight: "0" }}
+      >
         {seeMore ? "Ver Menos" : "Ver Mas"}
       </ButtonSeeMore>
     </>

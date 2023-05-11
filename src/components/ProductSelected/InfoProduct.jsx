@@ -49,7 +49,7 @@ const InfoProduct = ({
         <NameProduct>{prod.name}</NameProduct>
         {prod.promo ? (
           <>
-            <DivPrices>
+            <DivPrices style={{ paddingLeft: "0" }}>
               <p>${promoPrice}</p>
               <p>${prod.price}</p>
             </DivPrices>
@@ -76,7 +76,7 @@ const InfoProduct = ({
               ))}
             </Slider>
             {prod.promo && (
-              <DivDescuentoInProd>
+              <DivDescuentoInProd style={{ top: "15px" }}>
                 {prod.descuento}%off efectivo
               </DivDescuentoInProd>
             )}

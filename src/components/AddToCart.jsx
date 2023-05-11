@@ -74,7 +74,7 @@ const AddToCart = ({ stock, talleSelected, prod }) => {
     <ButtonSeeMore
       type="button"
       onClick={handlerAddToCart}
-      style={{ width: "300px" }}
+      style={{ width: "280px", paddingLeft: "25px" }}
     >
       Agregar al carrito
     </ButtonSeeMore>

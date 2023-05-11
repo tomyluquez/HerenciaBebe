@@ -14,7 +14,7 @@ const MainPage = ({ products }) => {
       <Categories />
       <Destacados products={products} />
       <ButtonSeeMore
-        style={{ marginTop: "50px" }}
+        style={{ marginTop: "50px", marginLeft: "0", marginRight: "0" }}
         onClick={() => navigate("/productos")}
       >
         Ver todos los productos

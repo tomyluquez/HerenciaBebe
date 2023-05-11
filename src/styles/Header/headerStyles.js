@@ -34,6 +34,10 @@ export const NavBar = styled.nav`
   z-index: 1001;
   position: fixed;
   padding-top: 23px;
+  img:first-of-type {
+    margin-left: 45px;
+    cursor: pointer;
+  }
   @media screen and (min-width: 700px) {
     img:first-of-type {
       margin-left: ${({ logginUser }) => (logginUser ? "170px" : "110px;")};
@@ -211,7 +215,7 @@ export const SpanCart = styled.span`
   vertical-align: inherit;
   position: absolute;
   top: 30px;
-  right: 20px;
+  right: 10px;
   background: ${colorPrincipal};
   color: ${colorBlanco};
   padding: 2px 5px;

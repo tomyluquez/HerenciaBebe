@@ -33,7 +33,7 @@ export const DivProdInCart = styled.div`
     flex-direction: column;
     gap: 1.5rem;
     overflow-y: scroll;
-    max-height: 400px;
+    max-height: 365px;
     @media screen and (min-width: 700px) {
     max-height: 250px;
 
@@ -52,6 +52,7 @@ export const CloseIcon = styled(IoCloseOutline)`
 
 export const DivContainerProduct = styled.div`
   width: 80%;
+  height: 145px;
   display: flex;
   justify-content: center;
   align-items: center;

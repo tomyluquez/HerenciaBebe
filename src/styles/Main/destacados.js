@@ -12,11 +12,16 @@ export const SliderStyled = styled.div`
     padding: 0 0 !important;
   }
 
+  .slick-active:first-child {
+    border: none;
+    background-color: none !important;
+  }
+
   .slick-slide div {
     width: auto;
     margin-right: 10px;
     @media screen and (max-width: 700px) {
-      margin-right: 0px;
+      margin-right: 0px !important;
     }
   }
 
@@ -30,11 +35,11 @@ export const SliderStyled = styled.div`
   }
 
   .slick-prev {
-    left: 15px !important;
+    left: 12px !important;
   }
 
   .slick-next {
-    right: 15px !important;
+    right: 12px !important;
   }
 `;
 
@@ -58,11 +63,12 @@ export const DivImg = styled.div`
   justify-content: center;
   align-items: start;
   gap: 0.8rem;
+  margin-right: -10px !important;
 `;
 
 export const ImgDestacados = styled.img`
   align-self: center;
-  width: 315px !important;
+  width: 280px !important;
   height: 350px;
   cursor: pointer;
 
@@ -75,7 +81,7 @@ export const NameProduct = styled.p`
   text-align: left;
   text-transform: uppercase;
   font-weight: bold;
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 25px;
   margin: 0 !important;
   color: ${colorBlanco};
 `;
@@ -87,6 +93,7 @@ export const DivPrices = styled.div`
   align-items: center;
   gap: 1.5rem;
   text-align: center;
+  padding-left: 25px;
   > p:first-child {
     font-size: 1.5rem;
     margin: 0 !important;
@@ -106,7 +113,7 @@ export const DivDescuento = styled.div`
   color: ${colorPrincipal};
   position: absolute;
   top: 20px;
-  right: 10px;
+  right: 30px;
   padding: 10px;
   border-radius: 10px;
 `;
@@ -118,11 +125,11 @@ export const DivTalles = styled.div`
   align-items: start;
   flex-direction: column;
   gap: 0.2rem;
-  padding: 0 10px 0 20px;
+  padding: 0 10px 0 25px;
   color: ${colorBlanco};
   > select:nth-child(2) {
     padding: 10px 20px;
-    width: 300px;
+    width: 280px;
   }
 `;
 
@@ -205,4 +212,14 @@ export const DivDescuentoInProd = styled(DivDescuento)`
     right: 70px;
     top: 15px;
   }
+`;
+
+export const DivContainerCuantity = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100% !important;
+  gap: 1rem;
+  flex-direction: column;
+  color: ${colorBlanco};
 `;
