@@ -1,4 +1,5 @@
 import {
+  Accordion,
   AccordionButton,
   AccordionItem,
   AccordionPanel,
@@ -79,4 +80,20 @@ export const ImgProd = styled.img`
 export const AcordeonItem = styled(AccordionItem)`
   background-color: ${colorPpalOscuro};
   border-radius: 30px;
+`;
+
+export const DivContainerOrderUser = styled.div`
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+`;
+
+export const Acordion = styled(Accordion)`
+  width: 370px;
+  @media screen and (min-width: 700px) {
+    width: 800px;
+  }
 `;

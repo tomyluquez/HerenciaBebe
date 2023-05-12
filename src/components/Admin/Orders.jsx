@@ -2,6 +2,7 @@ import { Accordion, AccordionIcon, Box } from "@chakra-ui/react";
 import React from "react";
 import {
   AcordeonItem,
+  Acordion,
   ButtonAcordeonOrder,
   DivAcordeonPanel,
   DivContainerDetailProd,
@@ -11,7 +12,7 @@ import {
 
 const Orders = ({ order }) => {
   return (
-    <Accordion allowToggle={true} maxWidth="800px" minWidth="150px">
+    <Acordion allowToggle={true}>
       <AcordeonItem>
         <h2>
           <ButtonAcordeonOrder>
@@ -53,7 +54,7 @@ const Orders = ({ order }) => {
           <span>TOTAL DEL PEDIDO ${order.totalPagar}</span>
         </DivAcordeonPanel>
       </AcordeonItem>
-    </Accordion>
+    </Acordion>
   );
 };
 

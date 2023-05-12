@@ -76,7 +76,7 @@ const CheckoutProducts = ({ products }) => {
       fecha: date.toLocaleDateString(),
       hora: date.toLocaleTimeString(),
     };
-    setModalIsVisible(<ModalOrder pedidoFinal={pedidoFinal} />);
+    setModalIsVisible(<ModalOrder pedidoFinal={pedidoFinal} user={user} />);
   };
 
   useEffect(() => {

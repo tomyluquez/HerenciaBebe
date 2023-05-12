@@ -6,7 +6,6 @@ import {
   CheckError,
   ButtonLogginModal,
   DivContainerButtonsCO,
-  ModalOrderOK,
 } from "../../styles/CheckOut/checkoutStyles";
 import { Spinner } from "@chakra-ui/react";
 import { ShadowOverlay as ShadowGral } from "../../styles/generalStyles";
@@ -15,7 +14,7 @@ import { useDispatch } from "react-redux";
 import { resetCart } from "../../redux/cartSlices";
 import { useNavigate } from "react-router";
 
-const ModalOrder = ({ pedidoFinal }) => {
+const ModalOrder = ({ pedidoFinal, user }) => {
   const [request, setRequest] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();

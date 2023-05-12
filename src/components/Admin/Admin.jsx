@@ -13,8 +13,10 @@ import PedEnviados from "./PedEnviados";
 import useJuntarOrders from "../../Hooks/useJuntarOrders";
 import {
   AcordeonItem,
+  Acordion,
   ButtonAcordeonOrder,
   DivAcordeonPanel,
+  DivContainerOrderUser,
   SpanEstado,
 } from "../../styles/Admin/OrdersStyles";
 import PedPreparados from "./PedPreparados";
@@ -44,11 +46,14 @@ const Admin = ({ user }) => {
 
   if (pedPendientes !== null) {
     return (
-      <div style={{ padding: "60px 0px" }}>
+      <DivContainerOrderUser>
+        <span style={{ marginTop: "30px", color: "white", fontSize: "2rem" }}>
+          HOLA HERENCIA!
+        </span>
         {
           <>
             {
-              <Accordion allowToggle={true} maxWidth="800px" minWidth="150px">
+              <Acordion allowToggle={true}>
                 <AcordeonItem>
                   <h2>
                     <ButtonAcordeonOrder>
@@ -66,11 +71,11 @@ const Admin = ({ user }) => {
                     />
                   </DivAcordeonPanel>
                 </AcordeonItem>
-              </Accordion>
+              </Acordion>
             }
 
             {
-              <Accordion allowToggle={true} maxWidth="800px" minWidth="150px">
+              <Acordion allowToggle={true}>
                 <AcordeonItem>
                   <h2>
                     <ButtonAcordeonOrder>
@@ -88,11 +93,11 @@ const Admin = ({ user }) => {
                     />
                   </DivAcordeonPanel>
                 </AcordeonItem>
-              </Accordion>
+              </Acordion>
             }
 
             {
-              <Accordion allowToggle={true} maxWidth="800px" minWidth="150px">
+              <Acordion allowToggle={true}>
                 <AcordeonItem>
                   <h2>
                     <ButtonAcordeonOrder>
@@ -106,11 +111,11 @@ const Admin = ({ user }) => {
                     <PedEnviados ped={pedEnviados} />
                   </DivAcordeonPanel>
                 </AcordeonItem>
-              </Accordion>
+              </Acordion>
             }
           </>
         }
-      </div>
+      </DivContainerOrderUser>
     );
   }
 

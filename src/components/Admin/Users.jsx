@@ -3,6 +3,7 @@ import getOrders from "../../Services/getOrders";
 import { Skeleton, Stack } from "@chakra-ui/react";
 import Orders from "./Orders";
 import { useNavigate } from "react-router";
+import { DivContainerOrderUser } from "../../styles/Admin/OrdersStyles";
 
 const Users = ({ user }) => {
   const [orders, setOrders] = useState(null);
@@ -20,10 +21,11 @@ const Users = ({ user }) => {
 
   if (orders !== null) {
     return (
-      <div style={{ padding: "60px 0px" }}>
-        <span style={{ marginTop: "30px" }}>
-          Biendenid@ {user.displayName} {user.email}!
+      <DivContainerOrderUser>
+        <span style={{ marginTop: "30px", color: "white", fontSize: "2rem" }}>
+          BIENVENID@ {user.displayName.toUpperCase()}!
         </span>
+        <span>Podras ver aqui el estado de tus pedidos</span>
         {orders ? (
           <>
             {orders.pedidoFinal
@@ -40,7 +42,7 @@ const Users = ({ user }) => {
             </button>
           </>
         )}
-      </div>
+      </DivContainerOrderUser>
     );
   }
 

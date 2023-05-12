@@ -69,6 +69,9 @@ export const ShadowOverlay = styled.div`
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(3px);
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
 `;
 
 export const DivButtonWhats = styled.div`
