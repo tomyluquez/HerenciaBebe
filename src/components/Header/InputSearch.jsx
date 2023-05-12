@@ -30,7 +30,6 @@ const InputSearch = () => {
       document.getElementById("search").value = "";
       return;
     }
-    console.log("Búsqueda realizada:", searchQuery);
     dispatch(searchProducts(searchQuery));
     navigate("/productos");
     document.getElementById("search").value = "";

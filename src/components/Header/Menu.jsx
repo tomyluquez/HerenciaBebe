@@ -31,7 +31,10 @@ const Menu = ({ user }) => {
     if (e.target.textContent === "Inicio") navigate("/");
     dispatch(closeMenues());
 
-    if (e.target.textContent === "Mis compras") {
+    if (
+      e.target.textContent === "Mis Compras" ||
+      e.target.textContent === "Mis Ventas"
+    ) {
       navigate(`/profile/${user.name}/misCompras`);
       dispatch(closeMenues());
     }
@@ -56,7 +59,13 @@ const Menu = ({ user }) => {
         <MenuLi onClick={(e) => handleClick(e)}>Inicio</MenuLi>
         <MenuLi onClick={(e) => handleClick(e)}>Productos</MenuLi>
         {user.isLogin ? (
-          <MenuLi onClick={(e) => handleClick(e)}>Mis compras</MenuLi>
+          <MenuLi onClick={(e) => handleClick(e)}>
+            Mis{" "}
+            {user.email.includes("luquez1431") ||
+            user.email.includes("celinamur18")
+              ? "Ventas"
+              : "Compras"}
+          </MenuLi>
         ) : null}
         {user.isLogin ? (
           <MenuLi onClick={handleLogout}>Salir</MenuLi>

@@ -67,6 +67,7 @@ const CheckoutProducts = ({ products }) => {
       formaPago,
       costoEnvio,
       numOrder,
+      estado: "pendiente",
       username: user.name,
       uid: user.uid,
       fecha: date.toLocaleDateString(),
