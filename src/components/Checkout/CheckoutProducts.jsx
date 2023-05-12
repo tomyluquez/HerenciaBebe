@@ -19,9 +19,12 @@ import Descuentos from "./Descuentos";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import "../../styles/CheckOut/animationsSlider.css";
 import ModalOrder from "./ModalOrder";
-import { useSelector } from "react-redux";
 import generateNumOrder from "../../Services/generateNumOrder";
 import { useToast } from "@chakra-ui/react";
+import firebaseApp from "../../Firebase/config";
+import { getAuth } from "firebase/auth";
+
+const auth = getAuth(firebaseApp);
 
 const CheckoutProducts = ({ products }) => {
   const [formaPago, setFormaPago] = useState(null);
@@ -32,7 +35,6 @@ const CheckoutProducts = ({ products }) => {
     useGetDescuentos(formaPago, cupon, products);
   const [sliderPosition, setSliderPosition] = useState(1);
   const [modalIsVisible, setModalIsVisible] = useState(null);
-  const user = useSelector((state) => state.user);
   const toast = useToast();
 
   const handleNext = () => {
@@ -58,6 +60,7 @@ const CheckoutProducts = ({ products }) => {
   };
 
   const handleSubmit = () => {
+    const user = auth.currentUser;
     const date = new Date();
     const numOrder = generateNumOrder();
     const pedidoFinal = {
@@ -68,7 +71,7 @@ const CheckoutProducts = ({ products }) => {
       costoEnvio,
       numOrder,
       estado: "pendiente",
-      username: user.name,
+      username: user.displayName,
       uid: user.uid,
       fecha: date.toLocaleDateString(),
       hora: date.toLocaleTimeString(),
