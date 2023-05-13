@@ -6,7 +6,9 @@ import { settingsCheckout } from "../../Data/settingsCarousels";
 const ProductsSelectCO = ({ products, formaPago }) => {
   return (
     <>
-      <h4 style={{ marginTop: "0" }}>PRODUCTOS SELECCIONADOS</h4>
+      <h4 style={{ marginTop: "0", color: "white" }}>
+        PRODUCTOS SELECCIONADOS
+      </h4>
       <Slider {...settingsCheckout}>
         {products.map((prod) => (
           <ProdSelected key={prod.sku} prod={prod} />

@@ -27,11 +27,6 @@
     margin: 0 !important;
   }
 
-  .slick-active:first-child {
-    border: 1px solid black;
-    background-color: #fafafa;
-  }
-
   .divImg{
     border: 1px solid black;
     background-color: #fafafa;

@@ -14,8 +14,24 @@ const persistConfig = {
   storage,
 };
 
-const persistedToggleMenues = persistReducer(persistConfig, toggleMenuReducer);
-const persistedCart = persistReducer(persistConfig, cartReducer);
+const toggleMenuPersistConfig = {
+  key: "toggleMenues",
+  version: 1,
+  storage,
+};
+
+const cartPersistConfig = {
+  key: "cart",
+  version: 1,
+  storage,
+};
+
+const persistedToggleMenues = persistReducer(
+  toggleMenuPersistConfig,
+  toggleMenuReducer
+);
+
+const persistedCart = persistReducer(cartPersistConfig, cartReducer);
 
 export const store = configureStore({
   reducer: {

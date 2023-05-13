@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  CenterSlider,
   DivDescuentoInProd,
   DivPrices,
   DivTalles,
@@ -58,7 +57,7 @@ const InfoProduct = ({
             </p>
           </>
         ) : (
-          <DivPrices>
+          <DivPrices style={{ paddingLeft: "0" }}>
             <p>${prod.price}</p>
           </DivPrices>
         )}

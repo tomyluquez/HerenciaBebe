@@ -14,6 +14,8 @@ import { getAuth, signOut } from "firebase/auth";
 import { setUser } from "../../redux/userSlices";
 import firebaseApp from "../../Firebase/config";
 import { removeFilters } from "../../redux/productsSlice";
+import { useToast } from "@chakra-ui/react";
+import { useEffect } from "react";
 
 const auth = getAuth(firebaseApp);
 
@@ -22,6 +24,21 @@ const Menu = ({ user }) => {
   const menuOpen = useSelector((state) => state.toggleMenues.hamburger);
   const totalProducts = useSelector((state) => state.cart.totalProducts);
   const dispatch = useDispatch();
+  const toast = useToast();
+
+  useEffect(() => {
+    if (totalProducts > 0) {
+      toast({
+        title: "Productos en el carrito",
+        description:
+          "Tienes productos en el carrito, por favor termina la compra",
+        status: "warning",
+        duration: 3000,
+        isClosable: true,
+        position: "top",
+      });
+    }
+  }, []);
 
   const handleClick = (e) => {
     if (e.target.textContent === "Productos") {
@@ -75,12 +92,14 @@ const Menu = ({ user }) => {
       </UlMenu>
       <IconCart onClick={() => dispatch(toggleMenues("cart"))} />
       {totalProducts > 0 ? (
-        <SpanCart
-          logginUser={user.isLogin}
-          onClick={() => dispatch(toggleMenues("cart"))}
-        >
-          {totalProducts}
-        </SpanCart>
+        <>
+          <SpanCart
+            logginUser={user.isLogin}
+            onClick={() => dispatch(toggleMenues("cart"))}
+          >
+            {totalProducts}
+          </SpanCart>
+        </>
       ) : null}
       <Cart />
     </MenuSt>

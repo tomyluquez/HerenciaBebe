@@ -52,7 +52,7 @@ export const CloseIcon = styled(IoCloseOutline)`
 
 export const DivContainerProduct = styled.div`
   width: 80%;
-  height: 145px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ export const DivContainerImg = styled.div`
   @media screen and (min-width: 700px) {
     width: 35%;
     & img {
-      width: 90% !important;
+      width: 80% !important;
     }
   }
 `;
@@ -83,7 +83,7 @@ export const DivContainerDetails = styled.div`
   display: flex;
   flex-direction: column;
   width: 60%;
-  height: 90%;
+  height: 100%;
   & h5 {
     margin-top: 0;
     color: ${colorPrincipal};

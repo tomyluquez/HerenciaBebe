@@ -48,11 +48,11 @@ export const GeneralStyles = createGlobalStyle`
     }
     
     input[type="checkbox"]:checked + label {
-      background-color: ${colorPrincipal};
+      background-color: ${colorPpalOscuro};
       color: ${colorBlanco}
     }
     input[type="radio"]:checked + label {
-      background-color: ${colorPrincipal};
+      background-color: ${colorPpalOscuro};
       color: ${colorBlanco}
     }
 `;

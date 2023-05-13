@@ -28,7 +28,7 @@ const Cart = () => {
       <DivProdInCart>
         {productsCart &&
           productsCart.map((prod) => {
-            return <ProductInCart product={prod} />;
+            return <ProductInCart product={prod} key={prod.uid} />;
           })}
       </DivProdInCart>
       <InfoCart productsCart={productsCart} />

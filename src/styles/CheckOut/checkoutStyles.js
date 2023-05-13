@@ -68,7 +68,7 @@ export const Alert = styled.p`
   margin: 10px 0;
   border: 1px solid ${colorBlanco};
   color: ${colorBlanco};
-  background-color: red;
+  background-color: #72d378;
   padding: 4px 2px;
 `;
 
