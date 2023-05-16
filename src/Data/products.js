@@ -1,5 +1,32 @@
 export let products = [
   {
+    name: "Remera ML - Blanco Tommy",
+    sku: "0323",
+    price: 5499,
+    priceTar: 6499,
+    marca: "minis",
+    promo: false,
+    descuento: 0,
+    talles: {
+      "0 - 3 Meses": 0,
+      "3 - 6 Meses": 0,
+      "6 - 9 Meses": 0,
+      "9 - 12 Meses": 0,
+      "12 - 18 Meses": 1,
+      "18 - 24 Meses": 1,
+      "24 - 36 Meses": 1,
+    },
+    color: "Blanco Tommy",
+    descripcion: "Remera manga larga color - Blanco Tommy",
+    fotos: [
+      "./Products/Minis/Remera ML - Blanco Tommy.jpeg",
+      "./Products/Minis/Remera ML - Blanco Tommy2.jpeg",
+      "./Products/Minis/Remera ML - Blanco Tommy3.jpeg",
+    ],
+    category: "Remeras",
+    temporada: "Invierno",
+  },
+  {
     name: "Remera ML - Celeste Funny",
     sku: "0322",
     price: 5499,
