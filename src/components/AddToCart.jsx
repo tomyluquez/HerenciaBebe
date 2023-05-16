@@ -34,6 +34,7 @@ const AddToCart = ({ stock, talleSelected, prod }) => {
       name: prod.name,
       sku: prod.sku,
       price: prod.price,
+      priceTar: prod.priceTar,
       promo: prod.promo,
       descuento: prod.descuento,
       foto: prod.fotos[0],

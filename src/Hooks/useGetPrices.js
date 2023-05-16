@@ -18,7 +18,7 @@ const useGetPrices = (products) => {
         product.price - (product.price * descEft) / 100
       );
     }
-    totalPrice += product.price;
+    totalPrice += product.priceTar;
   });
 
   return [totalPriceEft, totalPrice];

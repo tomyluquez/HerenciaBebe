@@ -61,7 +61,7 @@ const ProductInCart = ({ product }) => {
         <DivDetails>
           <span>Talle: {product.talle}</span>
           <span>Cantidad: {product.cantidad}</span>
-          <span>Precio: ${product.price}</span>
+          <span>Precio: ${product.priceTar}</span>
           <span>
             Eliminar:{" "}
             <BsFillTrash3Fill
