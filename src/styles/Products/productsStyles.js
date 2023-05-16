@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colorBlanco, colorPrincipal } from "../generalStyles";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const DivContainerGral = styled.div`
   display: grid;
@@ -228,7 +229,7 @@ export const DivContainerLoading = styled.div`
   align-items: center;
 `;
 
-export const ImgProd = styled.img`
+export const ImgProd = styled(LazyLoadImage)`
   width: 100%;
   height: 213px;
   @media screen and (min-width: 700px) {

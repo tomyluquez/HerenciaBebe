@@ -3,7 +3,7 @@ import { ButtonAddToCart } from "./destacados";
 import { colorBlanco, colorPrincipal } from "../generalStyles";
 
 export const MainPpal = styled.main`
-  padding-top: 83px;
+  padding-top: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;

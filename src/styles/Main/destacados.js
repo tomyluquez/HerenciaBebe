@@ -116,6 +116,7 @@ export const DivDescuento = styled.div`
   right: 30px;
   padding: 10px;
   border-radius: 10px;
+  z-index: 10;
 `;
 
 export const DivTalles = styled.div`

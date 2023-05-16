@@ -1,4 +1,3 @@
-import { PropTypes } from "prop-types";
 import { useSelector } from "react-redux";
 import {
   DivContainerCuotas,
@@ -11,6 +10,7 @@ import {
 import { useNavigate } from "react-router";
 import { DivDescuento, DivPrices } from "../../styles/Main/destacados";
 import useGetPromoPrice from "../../Hooks/useGetPromoPrice";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const CardProd = ({ prod }) => {
   const navigate = useNavigate();
@@ -31,7 +31,7 @@ const CardProd = ({ prod }) => {
             {efectivo}%off efectivo
           </DivDescuento>
         )}
-        <ImgProd src={prod.fotos[0]} alt="" />
+        <ImgProd src={prod.fotos[0]} alt="" effect="blur" />
       </DivContainerImg>
       <DivContainerDetailsProd>
         <DivContainerName>
@@ -47,9 +47,6 @@ const CardProd = ({ prod }) => {
       </DivContainerDetailsProd>
     </DivContainerProd>
   );
-};
-CardProd.propTypes = {
-  prod: PropTypes.object.isRequired,
 };
 
 export default CardProd;

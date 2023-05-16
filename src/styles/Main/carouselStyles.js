@@ -9,7 +9,6 @@ export const StyledCarousel = styled(Slider)`
   margin: 60px 0;
 
   @media (max-width: 700px) {
-    height: 500px;
     margin: 0;
   }
 

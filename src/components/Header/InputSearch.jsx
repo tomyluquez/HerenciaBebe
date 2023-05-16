@@ -57,7 +57,6 @@ const InputSearch = () => {
           id="search"
           placeholder="Busqueda"
           type="search"
-          onSearch={handleSearch}
           onKeyPress={handleKeyPress}
         />
       </DivInput>
