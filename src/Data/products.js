@@ -1,7 +1,7 @@
 export let products = [
   {
     name: "Remera ML - Celeste Funny",
-    sku: "0321",
+    sku: "0322",
     price: 5499,
     priceTar: 6499,
     marca: "minis",
