@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import useGetCostoEnvio from "../../Hooks/useGetCostoEnvio";
 import useGetDescuentos from "../../Hooks/useGetDescuentos";
 import {
   Alert,
@@ -23,6 +22,7 @@ import generateNumOrder from "../../Services/generateNumOrder";
 import { useToast } from "@chakra-ui/react";
 import firebaseApp from "../../Firebase/config";
 import { getAuth } from "firebase/auth";
+import { useSelector } from "react-redux";
 
 const auth = getAuth(firebaseApp);
 
@@ -36,6 +36,9 @@ const CheckoutProducts = ({ products }) => {
   const [sliderPosition, setSliderPosition] = useState(1);
   const [modalIsVisible, setModalIsVisible] = useState(null);
   const toast = useToast();
+  const {
+    formasPago: { tarjeta },
+  } = useSelector((state) => state.datosComercio);
 
   const handleNext = () => {
     if (sliderPosition === 2 && !formaPago) {
@@ -83,10 +86,6 @@ const CheckoutProducts = ({ products }) => {
     if (entrega === "retiro") {
       setCostoEnvio(false);
     }
-    if (entrega === "entrega") {
-      const [costo] = useGetCostoEnvio(formaPago, products);
-      setCostoEnvio(costo);
-    }
   }, [entrega]);
 
   return (
@@ -129,7 +128,7 @@ const CheckoutProducts = ({ products }) => {
             {sliderPosition === 5 && (
               <DivProductsSelect>
                 <DivContainerDetails>
-                  <CostoEnvioCO entrega={entrega} costoEnvio={costoEnvio} />
+                  <CostoEnvioCO entrega={entrega} totalPagar={totalPagar} />
                   <Descuentos
                     descuentoEft={descuentoEft}
                     descuentoCupon={descuentoCupon}
@@ -138,8 +137,8 @@ const CheckoutProducts = ({ products }) => {
                   <span>Total a pagar: ${totalPagar ? totalPagar : "-"}</span>
                   {formaPago === "tarjeta" ? (
                     <span>
-                      Podes abonar en 3 cuotas sin interes de $
-                      {Math.floor(totalPagar / 3)}
+                      Podes abonar en {tarjeta} cuotas fijas de $
+                      {Math.floor(totalPagar / tarjeta)}
                     </span>
                   ) : null}
                 </DivContainerDetails>
@@ -158,7 +157,11 @@ const CheckoutProducts = ({ products }) => {
           <ButtonNext onClick={handleSubmit}>Finalizar Compra</ButtonNext>
         ) : (
           <ButtonNext onClick={handleNext}>
-            {sliderPosition === 4 ? "No tengo cupon" : "Siguiente"}
+            {sliderPosition === 4
+              ? cupon !== "no"
+                ? "Aplicar Cupon"
+                : "No tengo cupon"
+              : "Siguiente"}
           </ButtonNext>
         )}
       </DivButtons>

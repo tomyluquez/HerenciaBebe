@@ -1,11 +1,11 @@
 import React from "react";
 
-const CostoEnvioCO = ({ entrega, costoEnvio }) => {
+const CostoEnvioCO = ({ entrega, totalPagar }) => {
   return (
     <p>
       Costo de Envio:
       {entrega ? (
-        entrega === "entrega" && costoEnvio ? (
+        entrega === "entrega" && totalPagar < 10000 ? (
           <span>
             Te informaremos el costo de envio al procesar la compra segun tu
             zona

@@ -51,6 +51,8 @@ const ProductSelected = ({ products }) => {
       name: productSelected[0].name,
       sku: productSelected[0].sku,
       price: productSelected[0].price,
+      priceTar: productSelected[0].priceTar,
+      marca: productSelected[0].marca,
       promo: productSelected[0].promo,
       descuento: productSelected[0].descuento,
       foto: productSelected[0].fotos[0],

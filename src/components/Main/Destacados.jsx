@@ -13,7 +13,7 @@ const Destacados = ({ products }) => {
 
   return (
     <SliderStyled>
-      <TitleMain>Productos Destacados</TitleMain>
+      <TitleMain>PRODUCTOS EN LIQUIDACION !</TitleMain>
       <CenterSlider>
         <div>
           <Slider {...settingsDestacados}>

@@ -77,7 +77,7 @@ const PedPendientes = ({ ped, set, change }) => {
                     <>
                       <DivContainerDetailProd>
                         <div className="FOTO">
-                          <ImgProd src={`../${product.foto}`} alt="" />
+                          <ImgProd src={`/.${product.foto}`} alt="" />
                         </div>
                         <span className="NAME">PRODUCTO: {product.name}</span>
                         <span className="CANTIDAD">

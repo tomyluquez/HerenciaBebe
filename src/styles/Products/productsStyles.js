@@ -33,6 +33,10 @@ export const DivContainerProd = styled.div`
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  :hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const DivContainerDetailsProd = styled.div`
@@ -51,10 +55,14 @@ export const DivContainerDetailsProd = styled.div`
 `;
 
 export const DivContainerName = styled.div`
-  height: 40px;
+  height: 70px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  @media screen and (min-width: 700px) {
+    height: 40px;
+    align-items: center;
+  }
 `;
 
 export const DivContainerCuotas = styled.div`
@@ -63,6 +71,7 @@ export const DivContainerCuotas = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 `;
 
 export const DivContainerImg = styled.div`

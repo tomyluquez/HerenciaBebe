@@ -14,6 +14,8 @@ const Cupones = ({ cupon, setCupon }) => {
     setCupon(descuento);
   };
 
+  console.log(cupon);
+
   return (
     <>
       <FormCupones onSubmit={handleCupones}>

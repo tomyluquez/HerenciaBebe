@@ -9,20 +9,26 @@ import {
   ImgProd,
 } from "../../styles/Products/productsStyles";
 import { useNavigate } from "react-router";
-import { DivDescuento } from "../../styles/Main/destacados";
+import { DivDescuento, DivPrices } from "../../styles/Main/destacados";
+import useGetPromoPrice from "../../Hooks/useGetPromoPrice";
 
 const CardProd = ({ prod }) => {
   const navigate = useNavigate();
   const {
-    formasPago: { tarjeta },
+    formasPago: { tarjeta, efectivo },
   } = useSelector((state) => state.datosComercio);
+  const promoPrice = useGetPromoPrice(prod.price, prod.descuento);
 
   return (
     <DivContainerProd onClick={() => navigate(`/productos/${prod.sku}`)}>
       <DivContainerImg>
-        {prod.promo && (
+        {prod.promo ? (
           <DivDescuento style={{ top: "0px", right: "5px", height: "30px" }}>
             {prod.descuento}%off efectivo
+          </DivDescuento>
+        ) : (
+          <DivDescuento style={{ top: "0px", right: "5px", height: "30px" }}>
+            {efectivo}%off efectivo
           </DivDescuento>
         )}
         <ImgProd src={prod.fotos[0]} alt="" />
@@ -31,9 +37,12 @@ const CardProd = ({ prod }) => {
         <DivContainerName>
           <span>{prod.name}</span>
         </DivContainerName>
-        <span className="price">${prod.price}</span>
+        <DivPrices style={{ width: "auto", padding: "0" }}>
+          <p>${promoPrice}</p>
+          {prod.promo ? <p>${prod.price}</p> : null}
+        </DivPrices>
         <DivContainerCuotas>
-          {tarjeta} cuotas sin interes de ${Math.floor(prod.price / tarjeta)}
+          {tarjeta} cuotas fijas de ${Math.floor(prod.priceTar / tarjeta)}
         </DivContainerCuotas>
       </DivContainerDetailsProd>
     </DivContainerProd>

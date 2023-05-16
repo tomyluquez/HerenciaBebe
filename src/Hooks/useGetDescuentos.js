@@ -25,10 +25,12 @@ const useGetDescuentos = (formaPago, cupon, products) => {
     descuentoEft = totalPrices - descuentoInd;
   }
 
+  const totalPricesTar = products.reduce((acc, prod) => acc + prod.priceTar, 0);
+
   if (cupon && formaPago === "efectivo") {
     descuentoCupon = Math.floor(((totalPrices - descuentoEft) * cupon) / 100);
   } else {
-    descuentoCupon = Math.floor((totalPrices * cupon) / 100);
+    descuentoCupon = Math.floor((totalPricesTar * cupon) / 100);
   }
 
   totalDescuentos =
@@ -38,9 +40,9 @@ const useGetDescuentos = (formaPago, cupon, products) => {
   } else if (formaPago === "efectivo" && !descuentoCupon) {
     totalPagar = totalPrices - descuentoEft;
   } else if (formaPago !== "efectivo" && descuentoCupon) {
-    totalPagar = totalPrices - descuentoCupon;
+    totalPagar = totalPricesTar - descuentoCupon;
   } else {
-    totalPagar = totalPrices;
+    totalPagar = totalPricesTar;
   }
   return [descuentoEft, descuentoCupon, totalDescuentos, totalPagar];
 };
