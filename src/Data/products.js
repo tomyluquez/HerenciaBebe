@@ -137,7 +137,7 @@ export let products = [
   {
     name: "Conjunto Frisa - Blanco Corazones",
     sku: "0318",
-    price: 14599,
+    price: 13999,
     priceTar: 17159,
     marca: "minis",
     promo: false,
@@ -217,7 +217,7 @@ export let products = [
   {
     name: "Conjunto Frisa - Blanco Osos",
     sku: "0315",
-    price: 14599,
+    price: 13999,
     priceTar: 17159,
     marca: "minis",
     promo: false,
@@ -295,7 +295,7 @@ export let products = [
   {
     name: "Conjunto Frisa - Rosa",
     sku: "0312",
-    price: 14599,
+    price: 13999,
     priceTar: 17159,
     marca: "minis",
     promo: false,
@@ -375,7 +375,7 @@ export let products = [
   {
     name: "Conjunto Frisa - Camel",
     sku: "0309",
-    price: 14599,
+    price: 13999,
     priceTar: 17159,
     marca: "minis",
     promo: false,
@@ -455,7 +455,7 @@ export let products = [
   {
     name: "Conjunto Frisa - Azul Francia",
     sku: "0306",
-    price: 14599,
+    price: 13999,
     priceTar: 17159,
     marca: "minis",
     promo: false,
@@ -535,7 +535,7 @@ export let products = [
   {
     name: "Conjunto Frisa - Arena",
     sku: "0303",
-    price: 14599,
+    price: 13999,
     priceTar: 17159,
     marca: "minis",
     promo: false,
