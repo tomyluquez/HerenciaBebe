@@ -218,3 +218,11 @@ export const DivContainerLoading = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const ImgProd = styled.img`
+  width: 100%;
+  height: 213px;
+  @media screen and (min-width: 700px) {
+    height: 400px;
+  }
+`;

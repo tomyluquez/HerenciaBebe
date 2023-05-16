@@ -6,6 +6,7 @@ import {
   DivContainerImg,
   DivContainerName,
   DivContainerProd,
+  ImgProd,
 } from "../../styles/Products/productsStyles";
 import { useNavigate } from "react-router";
 import { DivDescuento } from "../../styles/Main/destacados";
@@ -24,7 +25,7 @@ const CardProd = ({ prod }) => {
             {prod.descuento}%off efectivo
           </DivDescuento>
         )}
-        <img style={{ width: "100%" }} src={prod.fotos[0]} alt="" />
+        <ImgProd src={prod.fotos[0]} alt="" />
       </DivContainerImg>
       <DivContainerDetailsProd>
         <DivContainerName>
