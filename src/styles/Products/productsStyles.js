@@ -2,6 +2,10 @@ import styled from "styled-components";
 import { colorBlanco, colorPrincipal } from "../generalStyles";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import {
+  BsArrowLeftCircleFill,
+  BsFillArrowRightCircleFill,
+} from "react-icons/bs";
 
 export const DivContainerGral = styled.div`
   display: grid;
@@ -235,4 +239,40 @@ export const ImgProd = styled(LazyLoadImage)`
   @media screen and (min-width: 700px) {
     height: 400px;
   }
+`;
+
+export const ButtonBack = styled(BsArrowLeftCircleFill)`
+  background-color: ${colorPrincipal};
+  color: ${colorBlanco};
+  font-size: 1.5rem;
+`;
+
+export const ButtonNext = styled(BsFillArrowRightCircleFill)`
+  background-color: ${colorPrincipal};
+  color: ${colorBlanco};
+  font-size: 1.5rem;
+`;
+
+export const DivContainerPaginacion = styled.div`
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const SpanCurrentPage = styled.span`
+  padding: 3px;
+  position: relative;
+  width: 20px;
+  background-color: rgb(250, 250, 250);
+  color: rgb(189, 173, 155);
+  text-align: center;
+  border-radius: 50%;
+`;
+
+export const DivPages = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 `;
