@@ -14,6 +14,7 @@ import { Spinner } from "@chakra-ui/react";
 const Products = () => {
   window.scrollTo(0, 0);
   const products = useSelector((state) => state.productsState.products);
+
   const productsFiltered = useSelector(
     (state) => state.productsState.productsFiltered
   );
@@ -22,7 +23,7 @@ const Products = () => {
   const [productsList, setProductsList] = useState(null);
 
   useEffect(() => {
-    window.addEventListener("onload", () => {
+    window.addEventListener("load", () => {
       setLoading(false);
     });
     if (productsFiltered.length > 0) {

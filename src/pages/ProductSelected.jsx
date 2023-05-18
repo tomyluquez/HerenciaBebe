@@ -10,8 +10,9 @@ import { useDispatch } from "react-redux";
 import { setStock } from "../redux/productsSlice";
 import { toggleMenues } from "../redux/opens";
 import { useToast } from "@chakra-ui/react";
+import { products } from "../Data/products";
 
-const ProductSelected = ({ products }) => {
+const ProductSelected = () => {
   window.scrollTo(0, 0);
   const { sku } = useParams();
   const productSelected = useGetproductSelected(sku, products);

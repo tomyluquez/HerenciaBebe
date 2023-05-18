@@ -7,6 +7,7 @@ import {
 import Slider from "react-slick";
 import {
   DivContainerCuotas,
+  DivContainerLoading,
   ImgProdSelected,
   LabelStyles,
 } from "../../styles/Products/productsStyles";
@@ -22,6 +23,9 @@ import {
   DivSliderProd,
   DivSlider,
 } from "../../styles/Products/ProdInd/prodIndStyles";
+import "../../styles/Main/destacados.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const InfoProduct = ({
   prod,
