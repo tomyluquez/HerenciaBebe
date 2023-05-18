@@ -10,9 +10,9 @@ import { useDispatch } from "react-redux";
 import { setStock } from "../redux/productsSlice";
 import { toggleMenues } from "../redux/opens";
 import { useToast } from "@chakra-ui/react";
+import { useEffect } from "react";
 
 const ProductSelected = ({ products }) => {
-  window.scrollTo(0, 0);
   const { sku } = useParams();
   const productSelected = useGetproductSelected(sku, products);
   const [talleSelected, setTalleSelected] = useState(null);
@@ -21,6 +21,15 @@ const ProductSelected = ({ products }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const toast = useToast();
+
+  const [isFirstRender, setIsFirstRender] = useState(true);
+
+  useEffect(() => {
+    if (isFirstRender) {
+      window.scrollTo(0, 0);
+      setIsFirstRender(false);
+    }
+  }, [isFirstRender]);
 
   const handlerSubmitProd = () => {
     if (!talleSelected) {

@@ -245,12 +245,14 @@ export const ButtonBack = styled(BsArrowLeftCircleFill)`
   background-color: ${colorPrincipal};
   color: ${colorBlanco};
   font-size: 1.5rem;
+  cursor: pointer;
 `;
 
 export const ButtonNext = styled(BsFillArrowRightCircleFill)`
   background-color: ${colorPrincipal};
   color: ${colorBlanco};
   font-size: 1.5rem;
+  cursor: pointer;
 `;
 
 export const DivContainerPaginacion = styled.div`

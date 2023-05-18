@@ -5,11 +5,9 @@ import Sort from "../components/Products/Sort";
 import {
   DivContainerFilters,
   DivContainerGral,
-  DivContainerLoading,
   DivContainerProducts,
 } from "../styles/Products/productsStyles";
 import { useSelector } from "react-redux";
-import { Spinner } from "@chakra-ui/react";
 import Paginacion from "../components/Products/Paginacion";
 
 const Products = () => {
@@ -18,8 +16,12 @@ const Products = () => {
     (state) => state.productsState.productsFiltered
   );
   const [pagina, setPagina] = useState(1);
-  const prodPorPagina = 10;
+  const prodPorPagina = 12;
   const cantPaginas = productsFiltered.length / prodPorPagina;
+
+  useEffect(() => {
+    setPagina(1);
+  }, [productsFiltered]);
 
   return (
     <DivContainerProducts>
@@ -31,7 +33,7 @@ const Products = () => {
         {productsFiltered
           .slice(
             (pagina - 1) * prodPorPagina,
-            (pagina - 1) * prodPorPagina + 10
+            (pagina - 1) * prodPorPagina + prodPorPagina
           )
           .map((prod) => (
             <CardProd key={prod.sku} prod={prod} />

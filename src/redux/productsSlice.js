@@ -80,7 +80,6 @@ export const productsState = createSlice({
     },
     searchProducts: (state, action) => {
       const search = action.payload;
-      console.log(search);
       const productsFilteredBySearch = [...state.copyOriginalProducts].filter(
         (product) => {
           return (
