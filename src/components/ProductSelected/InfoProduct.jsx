@@ -88,7 +88,7 @@ const InfoProduct = ({
       </DivSliderProd>
       <DivTallesAndCount>
         <p style={{ textAlign: "center" }}>Descripcion: {prod.descripcion}</p>
-        <h5 style={{ textAlign: "center" }}>TALLES</h5>
+        <h5 style={{ textAlign: "center", color: "white" }}>TALLES Y STOCK</h5>
         {Object.keys(prod.talles).map((talle) => {
           return (
             <DivTalles
@@ -99,9 +99,9 @@ const InfoProduct = ({
               <LabelStyles
                 style={{ textAlign: "center" }}
                 htmlFor={talle}
-                onClick={(e) => handlerTalles(e.target.innerText)}
+                onClick={(e) => handlerTalles(e.target.htmlFor)}
               >
-                {talle}
+                {talle} - ({prod.talles[talle]})
               </LabelStyles>
             </DivTalles>
           );
