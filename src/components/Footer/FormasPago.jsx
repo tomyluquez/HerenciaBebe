@@ -22,7 +22,7 @@ const FormasPago = ({ formasPago }) => {
         </DivIconAndText>
         <DivIconAndText>
           <BsCreditCard />
-          <p>Tarjeta de Credito: {formasPago.tarjeta} cuotas sin interes</p>
+          <p>Tarjeta de Credito: {formasPago.tarjeta} fijas</p>
         </DivIconAndText>
       </DivSecundario>
     </DivContainerDato>

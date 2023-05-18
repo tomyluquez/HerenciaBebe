@@ -18,6 +18,7 @@ const ModalOrder = ({ pedidoFinal, user }) => {
   const [request, setRequest] = useState(false);
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const phone = useSelector((state) => state.datosComercio);
 
   useEffect(() => {
     async function submitOrder() {
@@ -29,7 +30,7 @@ const ModalOrder = ({ pedidoFinal, user }) => {
 
   const pedidoOk = () => {
     dispatch(resetCart());
-    const phoneNumber = "+543512118497";
+    const phoneNumber = `+54${phone}`;
     const message = `Hola, soy ${
       pedidoFinal.username
     }, acabo de hacer un pedido por la pagina, el numero de orden del pedido es ${

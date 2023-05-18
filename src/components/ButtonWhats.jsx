@@ -10,7 +10,7 @@ const ButtonWhats = () => {
       rel="noopener noreferrer"
     >
       <DivButtonWhats>
-        <img src="./whats.png" alt="" />
+        <img src="/whats.png" alt="" />
       </DivButtonWhats>
     </a>
   );
