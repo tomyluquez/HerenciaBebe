@@ -39,6 +39,7 @@ const Products = () => {
             <CardProd key={prod.sku} prod={prod} />
           ))}
       </DivContainerGral>
+
       <Paginacion
         pagina={pagina}
         setPagina={setPagina}

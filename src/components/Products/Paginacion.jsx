@@ -19,6 +19,7 @@ const Paginacion = ({ pagina, setPagina, cantPaginas }) => {
   return (
     <DivContainerPaginacion>
       {pagina > 1 && <ButtonBack onClick={handlerPrevPage}>atras</ButtonBack>}
+      <span style={{ color: "white" }}>Pagina</span>
       <DivPages>
         <SpanCurrentPage>{pagina}</SpanCurrentPage>
         <span style={{ color: "white" }}>de {totalPages}</span>

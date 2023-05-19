@@ -225,7 +225,7 @@ export let products = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 1,
       "12 - 18 Meses": 0,
       "18 - 24 Meses": 1,
@@ -251,7 +251,7 @@ export let products = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 1,
       "12 - 18 Meses": 0,
       "18 - 24 Meses": 1,
@@ -277,7 +277,7 @@ export let products = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 1,
       "12 - 18 Meses": 0,
       "18 - 24 Meses": 1,
@@ -1532,7 +1532,7 @@ export let products = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
