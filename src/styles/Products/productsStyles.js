@@ -278,3 +278,15 @@ export const DivPages = styled.div`
   align-items: center;
   gap: 0.5rem;
 `;
+
+export const ButtonSee = styled.button`
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 5px 0px;
+  background-color: ${colorPrincipal};
+  color: ${colorBlanco};
+  border: 1px solid ${colorBlanco};
+`;
