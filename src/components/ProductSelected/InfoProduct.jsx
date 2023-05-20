@@ -66,7 +66,7 @@ const InfoProduct = ({
           </DivPrices>
         )}
         <DivContainerCuotas style={{ marginBottom: "30px", marginTop: "30px" }}>
-          {tarjeta} cuotas sin interes de ${Math.floor(prod.price / tarjeta)}
+          {tarjeta} cuotas fijas de ${Math.floor(prod.priceTar / tarjeta)}
         </DivContainerCuotas>
       </DivContainterName>
 
