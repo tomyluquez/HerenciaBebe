@@ -1,4 +1,4 @@
-export let products = [
+let productsBase = [
   {
     name: "Remera ML - Blanco Tommy",
     sku: "0323",
@@ -3791,3 +3791,9 @@ export let products = [
     temporada: "Verano",
   },
 ];
+
+export const products = productsBase.map((product) => ({
+  ...product,
+  price: Math.round(product.price * 1.2),
+  priceTar: Math.round(product.priceTar * 1.2),
+}));
