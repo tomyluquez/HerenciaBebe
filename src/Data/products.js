@@ -2485,11 +2485,11 @@ let productsBase = [
   {
     name: "Conjunto Leoncitos",
     sku: "0077",
-    price: 5199,
+    price: 4199,
     priceTar: 5199,
     marca: "farolera",
-    promo: false,
-    descuento: 0,
+    promo: true,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2512,8 +2512,8 @@ let productsBase = [
   {
     name: "Conjunto Leoncitos Ranita",
     sku: "0050",
-    price: 3199,
-    priceTar: 3899,
+    price: 5199,
+    priceTar: 5999,
     marca: "farolera",
     promo: true,
     descuento: 30,

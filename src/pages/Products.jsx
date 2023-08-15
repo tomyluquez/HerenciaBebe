@@ -11,16 +11,26 @@ import { useSelector } from "react-redux";
 import Paginacion from "../components/Products/Paginacion";
 
 const Products = () => {
-  window.scrollTo(0, 0);
+  const [isFirstRender, setIsFirstRender] = useState(true);
+
   const productsFiltered = useSelector(
     (state) => state.productsState.productsFiltered
   );
-  const [pagina, setPagina] = useState(1);
-  const prodPorPagina = 12;
-  const cantPaginas = productsFiltered.length / prodPorPagina;
+  const [prodPorPagina, setProdPorPagina] = useState(12);
+  const [biggerTwelve, setBiggerTwelve] = useState(
+    productsFiltered.length > 12
+  );
+  console.log(productsFiltered);
+  console.log(biggerTwelve);
+  useEffect(() => {
+    if (isFirstRender) {
+      window.scrollTo(0, 0);
+      setIsFirstRender(false);
+    }
+  }, [isFirstRender]);
 
   useEffect(() => {
-    setPagina(1);
+    setBiggerTwelve(productsFiltered.length > 12);
   }, [productsFiltered]);
 
   return (
@@ -30,21 +40,18 @@ const Products = () => {
         <Filters />
       </DivContainerFilters>
       <DivContainerGral>
-        {productsFiltered
-          .slice(
-            (pagina - 1) * prodPorPagina,
-            (pagina - 1) * prodPorPagina + prodPorPagina
-          )
-          .map((prod) => (
-            <CardProd key={prod.sku} prod={prod} />
-          ))}
+        {biggerTwelve
+          ? productsFiltered
+              .slice(0, prodPorPagina)
+              .map((prod) => <CardProd key={prod.sku} prod={prod} />)
+          : productsFiltered.map((prod) => (
+              <CardProd key={prod.sku} prod={prod} />
+            ))}
       </DivContainerGral>
 
-      <Paginacion
-        pagina={pagina}
-        setPagina={setPagina}
-        cantPaginas={cantPaginas}
-      />
+      {biggerTwelve && (
+        <Paginacion prods={prodPorPagina} setProds={setProdPorPagina} />
+      )}
     </DivContainerProducts>
   );
 };
