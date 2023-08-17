@@ -88,7 +88,6 @@ export const productsState = createSlice({
           );
         }
       );
-      console.log(productsFilteredBySearch);
       state.productsFiltered = productsFilteredBySearch;
     },
   },

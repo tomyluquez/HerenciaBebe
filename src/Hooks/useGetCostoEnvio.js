@@ -1,5 +1,4 @@
 const useGetCostoEnvio = (formaPago, products) => {
-  console.log(products, formaPago);
   const envioGratis = 10000;
   const descEft = 10;
   let costo;
@@ -19,7 +18,6 @@ const useGetCostoEnvio = (formaPago, products) => {
       prices += product.priceTar;
     });
   }
-  console.log(prices);
   costo = envioGratis > prices;
   return [costo, prices];
 };

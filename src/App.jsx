@@ -5,6 +5,7 @@ import AuthListener from "./components/AuthListener.jsx";
 import { Suspense, lazy } from "react";
 import { DivContainerLoading } from "./styles/Products/productsStyles.js";
 import { Spinner } from "@chakra-ui/react";
+import ProductsCategory from "./pages/ProductsCategory.jsx";
 
 const Products = lazy(() => import("./pages/Products.jsx"));
 const Header = lazy(() => import("./components/Header/Header.jsx"));
@@ -46,6 +47,11 @@ function App() {
           <Routes>
             <Route exact path="/" element={<MainPage products={products} />} />
             <Route exact path="/productos" element={<Products />} />
+            <Route
+              exact
+              path="/productos/categorias/:category"
+              element={<ProductsCategory />}
+            />
             <Route
               exact
               path="/productos/:sku"

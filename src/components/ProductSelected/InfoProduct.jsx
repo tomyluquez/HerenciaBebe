@@ -75,7 +75,7 @@ const InfoProduct = ({
           <div>
             <Slider {...settingsProdSelected}>
               {prod.fotos.map((foto, index) => (
-                <ImgProdSelected key={index} src={`.${foto}`} alt="" />
+                <ImgProdSelected key={index} src={`${foto}`} alt="" />
               ))}
             </Slider>
             {prod.promo && (

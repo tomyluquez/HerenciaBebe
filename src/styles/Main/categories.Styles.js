@@ -13,7 +13,7 @@ export const MainPpal = styled.main`
 
 export const DivContainerCategories = styled.div`
   width: 100%;
-  height: ${({ seeMore }) => (seeMore ? "1200px" : "350px")};
+  height: 1200px;
   overflow: hidden;
   display: grid;
   place-items: center;
@@ -45,6 +45,18 @@ export const ImgCategories = styled.img`
   cursor: pointer;
   @media screen and (max-width: 700px) {
     width: 160px;
+    height: 160px;
+  }
+`;
+
+export const VideoCategories = styled.video`
+  max-width: 350px;
+  height: 350px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  @media screen and (max-width: 700px) {
+    width: 100%;
     height: 160px;
   }
 `;

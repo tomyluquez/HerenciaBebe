@@ -27,6 +27,7 @@ const TemporadaFilters = ({
   };
 
   const handlerChange = (e) => {
+    console.log(e.target.value);
     dispatch(
       filterProducts({
         value: e.target.value,

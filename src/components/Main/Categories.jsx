@@ -13,41 +13,30 @@ import { useDispatch } from "react-redux";
 import { filterProducts, removeFilters } from "../../redux/productsSlice";
 
 const Categories = () => {
-  const [seeMore, setSeeMore] = useState(false);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const handlerClickCategory = (img) => {
     dispatch(removeFilters());
-    dispatch(
-      filterProducts({
-        type: "category",
-        value: img.value,
-      })
-    );
-    navigate("/productos");
+    navigate(`/productos/categorias/${img.value}`);
   };
 
   return (
     <>
       <TitleMain>Nuestras Categorias</TitleMain>
-      <DivContainerCategories seeMore={seeMore}>
-        {imgsCategories.map((img, index) => (
-          <DivContainerImgAndSpan
-            key={index}
-            onClick={() => handlerClickCategory(img)}
-          >
-            <ImgCategories src={img.src} alt={img} loading="lazy" />
-            <SpanCategories>{img.value.toUpperCase()}</SpanCategories>
-          </DivContainerImgAndSpan>
-        ))}
+      <DivContainerCategories>
+        {imgsCategories
+          .sort((a, b) => a.value.localeCompare(b.value))
+          .map((img, index) => (
+            <DivContainerImgAndSpan
+              key={index}
+              onClick={() => handlerClickCategory(img)}
+            >
+              <ImgCategories src={img.src} alt={img} loading="lazy" />
+              <SpanCategories>{img.value.toUpperCase()}</SpanCategories>
+            </DivContainerImgAndSpan>
+          ))}
       </DivContainerCategories>
-      <ButtonSeeMore
-        onClick={() => setSeeMore(!seeMore)}
-        style={{ marginLeft: "0", marginRight: "0" }}
-      >
-        {seeMore ? "Ver Menos" : "Ver Mas"}
-      </ButtonSeeMore>
     </>
   );
 };

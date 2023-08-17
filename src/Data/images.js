@@ -6,6 +6,7 @@ export const images = [
 ];
 
 export const imgsCategories = [
+  { src: "./Categories/2x1.jpg", value: "2x1" },
   { src: "./Categories/3.png", value: "Ajuares" },
   { src: "./Categories/4.png", value: "Body" },
   { src: "./Categories/5.png", value: "Pantalones" },

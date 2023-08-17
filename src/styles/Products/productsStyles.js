@@ -32,6 +32,17 @@ export const DivContainerFilters = styled.div`
   }
 `;
 
+export const ContainerPromo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  text-align: center;
+  padding: 10px;
+  background: #fafafa;
+  color: ${colorPrincipal};
+`;
+
 export const DivContainerProd = styled.div`
   display: flex;
   flex-direction: column;

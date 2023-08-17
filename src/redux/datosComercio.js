@@ -12,7 +12,7 @@ const initialState = {
   },
   instagram: "www.instagram.com/herencia.bb",
   envios: "Envios a todo el pais",
-  enviosGratis: 10000,
+  enviosGratis: 15000,
 };
 
 export const datosComercio = createSlice({

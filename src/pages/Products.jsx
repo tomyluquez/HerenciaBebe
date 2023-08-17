@@ -3,6 +3,7 @@ import CardProd from "../components/Products/CardProd";
 import Filters from "../components/Products/Filters";
 import Sort from "../components/Products/Sort";
 import {
+  ContainerPromo,
   DivContainerFilters,
   DivContainerGral,
   DivContainerProducts,
@@ -10,7 +11,8 @@ import {
 import { useSelector } from "react-redux";
 import Paginacion from "../components/Products/Paginacion";
 
-const Products = () => {
+const Products = ({ titlePromo }) => {
+  const existeTitle = titlePromo !== "" && titlePromo !== undefined;
   const [isFirstRender, setIsFirstRender] = useState(true);
 
   const productsFiltered = useSelector(
@@ -20,8 +22,6 @@ const Products = () => {
   const [biggerTwelve, setBiggerTwelve] = useState(
     productsFiltered.length > 12
   );
-  console.log(productsFiltered);
-  console.log(biggerTwelve);
   useEffect(() => {
     if (isFirstRender) {
       window.scrollTo(0, 0);
@@ -39,6 +39,7 @@ const Products = () => {
         <Sort />
         <Filters />
       </DivContainerFilters>
+      {existeTitle && <ContainerPromo>{titlePromo}</ContainerPromo>}
       <DivContainerGral>
         {biggerTwelve
           ? productsFiltered
