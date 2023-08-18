@@ -766,7 +766,7 @@ let productsBase = [
     priceTar: 7699,
     marca: "farolera",
     promo: true,
-    descuento: 50,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 1,
@@ -783,7 +783,7 @@ let productsBase = [
       "/Products/Farolera/Enterito Interlock con Pie - Rosa2.jpeg",
     ],
     category: "Enteritos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Babero Algodon con Toalla Bosque - Rosa",
@@ -811,8 +811,8 @@ let productsBase = [
     price: 5329,
     priceTar: 6249,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -830,7 +830,7 @@ let productsBase = [
       "/Products/Farolera/Conjunto Body Beige - Pantalon Bosque Rosa3.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Campera y Pantalon Interlock Bosque - Azul",
@@ -838,8 +838,8 @@ let productsBase = [
     price: 5329,
     priceTar: 6249,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -859,7 +859,7 @@ let productsBase = [
       "/Products/Farolera/Campera y Pantalon Interlock Bosque - Azul4.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Enterito Interlock con Pie - Azul",
@@ -868,7 +868,7 @@ let productsBase = [
     priceTar: 7699,
     marca: "farolera",
     promo: true,
-    descuento: 50,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 1,
@@ -885,7 +885,7 @@ let productsBase = [
       "/Products/Farolera/Enterito Interlock con Pie - Azul2.jpeg",
     ],
     category: "Enteritos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Campera y Pantalon Interlock Flores - Aqua",
@@ -893,8 +893,8 @@ let productsBase = [
     price: 5329,
     priceTar: 6249,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -913,7 +913,7 @@ let productsBase = [
       "/Products/Farolera/Campera y Pantalon Interlock Flores - Aqua3.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Body y Ranita Interlock Flores - Aqua",
@@ -921,8 +921,8 @@ let productsBase = [
     price: 5329,
     priceTar: 6249,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 1,
@@ -940,7 +940,7 @@ let productsBase = [
       "/Products/Farolera/Body y Ranita Interlock Flores - Aqua2.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Plush - Marfil",
@@ -948,8 +948,8 @@ let productsBase = [
     price: 8479,
     priceTar: 9949,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 1,
@@ -968,7 +968,7 @@ let productsBase = [
       "/Products/Farolera/Conjunto Plush - Marfil3.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Body Rayado Celeste - Ranita Blanca",
@@ -976,8 +976,8 @@ let productsBase = [
     price: 5329,
     priceTar: 6249,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -995,7 +995,7 @@ let productsBase = [
       "/Products/Farolera/Conjunto Body Rayado Celeste - Ranita Blanca3.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Body Celeste - Ranita Zorrito",
@@ -1003,8 +1003,8 @@ let productsBase = [
     price: 5329,
     priceTar: 6249,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -1024,7 +1024,7 @@ let productsBase = [
       "/Products/Farolera/Conjunto Body Celeste - Ranita Zorrito4.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Batita y Pantalon Estrellas - Celeste",
@@ -1032,8 +1032,8 @@ let productsBase = [
     price: 5329,
     priceTar: 6249,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1052,7 +1052,7 @@ let productsBase = [
       "/Products/Farolera/Conjunto Batita y Pantalon Estrellas - Celeste3.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Enterito Plush - Gris",
@@ -2780,8 +2780,8 @@ let productsBase = [
     price: 5299,
     priceTar: 6199,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -2799,7 +2799,7 @@ let productsBase = [
       "/Products/Farolera/CRN - Campera y Pantalon Gris3.jpeg",
     ],
     category: "Conjuntos",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Safari - Celeste",
@@ -2981,8 +2981,8 @@ let productsBase = [
     price: 6199,
     priceTar: 7299,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       Unico: 1,
     },
@@ -2995,7 +2995,7 @@ let productsBase = [
       "/Products/Farolera/Manta Rayado Celeste4.jpeg",
     ],
     category: "Accesorios",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Manta Rayada - Rosa",
@@ -3017,7 +3017,7 @@ let productsBase = [
       "/Products/Farolera/Manta Zorrita4.jpeg",
     ],
     category: "Accesorios",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Mordillo Tela",
@@ -3553,7 +3553,7 @@ let productsBase = [
     priceTar: 7899,
     marca: "bunny",
     promo: true,
-    descuento: 50,
+    descuento: 40,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -3602,7 +3602,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 50,
+    descuento: 40,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3629,7 +3629,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 50,
+    descuento: 40,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3837,7 +3837,7 @@ let productsBase = [
     priceTar: 7199,
     marca: "bunny",
     promo: true,
-    descuento: 50,
+    descuento: 40,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,

@@ -22,7 +22,7 @@ const ProductsCategory = () => {
     <Products
       titlePromo={
         params.category === "2x1"
-          ? "Solo se efectuara el descuento comprando de a 2 prendas y se abonará la de mayor valor. Combinalas como quieras"
+          ? "Solo se efectuara el descuento comprando de a 2 prendas y se abonará la de mayor valor. Combinalas como quieras. (Los conjuntos ya cuentan como 2 piezas)"
           : ""
       }
     />
