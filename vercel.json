@@ -1,11 +1,11 @@
 {
-    "routes": [
-      { "src": "/productos/([^/]+)", "dest": "/index.html" },
-      { "src": "/productos", "dest": "/index.html" },
-      { "src": "/checkout", "dest": "/index.html" },
-      { "src": "/login", "dest": "/index.html" },
-      { "src": "/profile/([^/]+)/misCompras", "dest": "/index.html" },
-      { "src": "/(.*)", "dest": "/404.html" }
-    ]
-  }
-  
+  "routes": [
+    { "src": "/productos/([^/]+)", "dest": "/index.html" },
+    { "src": "/productos", "dest": "/index.html" },
+    { "src": "/productos/categorias/([^/]+)", "dest": "/index.html" }, 
+    { "src": "/checkout", "dest": "/index.html" },
+    { "src": "/login", "dest": "/index.html" },
+    { "src": "/profile/([^/]+)/misCompras", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/404.html" }
+  ]
+}
