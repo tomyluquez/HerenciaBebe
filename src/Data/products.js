@@ -658,8 +658,8 @@ let productsBase = [
     price: 5099,
     priceTar: 5999,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -676,7 +676,7 @@ let productsBase = [
       "/Products/Farolera/Body Interlock Bosque Beige2.jpeg",
     ],
     category: "Body",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Body Interlock - Rosa",
@@ -684,8 +684,8 @@ let productsBase = [
     price: 4399,
     priceTar: 5199,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -703,7 +703,7 @@ let productsBase = [
       "/Products/Farolera/Body Interlock Rosa3.jpeg",
     ],
     category: "Body",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Buzo Frisa Bordado - DDL",
@@ -739,8 +739,8 @@ let productsBase = [
     price: 4399,
     priceTar: 5199,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -757,7 +757,7 @@ let productsBase = [
       "/Products/Farolera/Body Interlock con Extensor - Verde2.jpeg",
     ],
     category: "Body",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Enterito Interlock con Pie - Rosa",
@@ -1110,8 +1110,8 @@ let productsBase = [
     price: 5099,
     priceTar: 5999,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1129,7 +1129,7 @@ let productsBase = [
       "/Products/Farolera/Body Interlock Blanco Lunares - Azul3.jpeg",
     ],
     category: "Body",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Cambiador Impermeable",
@@ -3046,8 +3046,8 @@ let productsBase = [
     price: 7699,
     priceTar: 8799,
     marca: "sabi",
-    promo: false,
-    descuento: 0,
+    promo: true,
+    descuento: 50,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -3064,7 +3064,7 @@ let productsBase = [
       "/Products/Sabi/Osito Waffle Blanco2.jpeg",
     ],
     category: "Body",
-    temporada: "Atemporal",
+    temporada: "Invierno",
   },
   {
     name: "Osito Waffle - Gris",
@@ -3072,8 +3072,8 @@ let productsBase = [
     price: 7699,
     priceTar: 8799,
     marca: "sabi",
-    promo: false,
-    descuento: 0,
+    promo: true,
+    descuento: 50,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3090,7 +3090,7 @@ let productsBase = [
       "/Products/Sabi/Osito Waffle gris2.jpeg",
     ],
     category: "Body",
-    temporada: "Atemporal",
+    temporada: "invierno",
   },
   {
     name: "Pantalon Amelia - Azul",
