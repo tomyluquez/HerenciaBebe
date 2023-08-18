@@ -10,7 +10,7 @@ import {
 import { Spinner } from "@chakra-ui/react";
 import { ShadowOverlay as ShadowGral } from "../../styles/generalStyles";
 import setOrders from "../../Services/setOrders";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { resetCart } from "../../redux/cartSlices";
 import { useNavigate } from "react-router";
 

@@ -6,7 +6,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -24,7 +24,7 @@ let productsBase = [
       "/Products/Minis/Remera ML - Blanco Tommy3.jpeg",
     ],
     category: "Remeras",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Remera ML - Celeste Funny",
@@ -33,7 +33,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -51,7 +51,7 @@ let productsBase = [
       "/Products/Minis/Remera ML - Celeste Funny3.jpeg",
     ],
     category: "Remeras",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Remera ML - Blanco Cerezas",
@@ -60,7 +60,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -78,7 +78,7 @@ let productsBase = [
       "/Products/Minis/Remera ML - Blanco Cerezas3.jpeg",
     ],
     category: "Remeras",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Remera ML - Blanco Peace",
@@ -87,7 +87,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -105,7 +105,7 @@ let productsBase = [
       "/Products/Minis/Remera ML - Blanco Peace3.jpeg",
     ],
     category: "Remeras",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Remera ML - Blanco Otoño",
@@ -114,7 +114,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -132,7 +132,7 @@ let productsBase = [
       "/Products/Minis/Remera ML - Blanco Otoño3.jpeg",
     ],
     category: "Remeras",
-    temporada: "Invierno",
+    temporada: "Atemporal",
   },
   {
     name: "Conjunto Frisa - Blanco Corazones",
@@ -2852,8 +2852,8 @@ let productsBase = [
     price: 6199,
     priceTar: 7199,
     marca: "bunny",
-    promo: false,
-    descuento: 0,
+    promo: true,
+    descuento: 50,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2867,7 +2867,7 @@ let productsBase = [
     descripcion: "Enterito Tejido",
     fotos: ["/Products/Bunny/Enterito Calafate Verdoso.jpeg"],
     category: "Enteritos",
-    temporada: "Atemporal",
+    temporada: "Invierno",
   },
   {
     name: "Enterito Calafate - Tostado",
@@ -2875,8 +2875,8 @@ let productsBase = [
     price: 6199,
     priceTar: 7199,
     marca: "bunny",
-    promo: false,
-    descuento: 0,
+    promo: true,
+    descuento: 50,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2893,7 +2893,7 @@ let productsBase = [
       "/Products/Bunny/Enterito Calafate Tostado2.jpeg",
     ],
     category: "Enteritos",
-    temporada: "Atemporal",
+    temporada: "Invierno",
   },
   {
     name: "Enterito Lino - Rayado Rosa",
