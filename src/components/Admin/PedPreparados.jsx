@@ -70,6 +70,7 @@ const PedPreparados = ({ ped, set, change }) => {
               </ButtonAcordeonOrder>
             </h2>
             <DivAcordeonPanel pb={4}>
+              <p>CLIENTE: {pedido.username}</p>
               {pedido.products
                 .slice()
                 .reverse()
@@ -90,6 +91,7 @@ const PedPreparados = ({ ped, set, change }) => {
                   );
                 })}
               <span>TOTAL DEL PEDIDO ${pedido.totalPagar}</span>
+              <span>TIPO DE ENVIO: {pedido.entrega}</span>
               <button onClick={() => setPreparado(pedido)}>
                 MARCAR COMO ENTREGADO
               </button>

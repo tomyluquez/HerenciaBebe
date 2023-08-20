@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 
 const useGetDescuentos = (formaPago, cupon, products) => {
+  console.log(products);
   const descEft = useSelector(
     (state) => state.datosComercio.formasPago.efectivo
   );
@@ -8,18 +9,22 @@ const useGetDescuentos = (formaPago, cupon, products) => {
   let descuentoCupon = 0;
   let totalDescuentos = 0;
   let totalPagar = 0;
-  const totalPrices = products.reduce((acc, prod) => acc + prod.price, 0);
+  const totalPrices = products.reduce(
+    (acc, prod) => acc + prod.price * prod.cantidad,
+    0
+  );
   let descuentoInd = 0;
   if (formaPago === "efectivo") {
     products.map((product) => {
       if (product.promo) {
-        descuentoInd += Math.floor(
-          product.price - (product.price * product.descuento) / 100
-        );
+        descuentoInd +=
+          Math.floor(
+            product.price - (product.price * product.descuento) / 100
+          ) * product.cantidad;
       } else {
-        descuentoInd += Math.floor(
-          product.price - (product.price * descEft) / 100
-        );
+        descuentoInd +=
+          Math.floor(product.price - (product.price * descEft) / 100) *
+          product.cantidad;
       }
     });
     descuentoEft = totalPrices - descuentoInd;
@@ -44,6 +49,7 @@ const useGetDescuentos = (formaPago, cupon, products) => {
   } else {
     totalPagar = totalPricesTar;
   }
+  console.log(totalPagar);
   return [descuentoEft, descuentoCupon, totalDescuentos, totalPagar];
 };
 

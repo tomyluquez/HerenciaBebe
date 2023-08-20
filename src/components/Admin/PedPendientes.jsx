@@ -15,6 +15,7 @@ import useOrders from "../../Hooks/useOrders";
 const db = getFirestore(firebaseApp);
 
 const PedPendientes = ({ ped, set, change }) => {
+  console.log(ped);
   const setEnviado = async (pedido) => {
     const orderRef = doc(db, "orders", pedido.uid);
 
@@ -69,6 +70,7 @@ const PedPendientes = ({ ped, set, change }) => {
               </ButtonAcordeonOrder>
             </h2>
             <DivAcordeonPanel pb={4}>
+              <p>CLIENTE: {pedido.username}</p>
               {pedido.products
                 .slice()
                 .reverse()
@@ -89,6 +91,7 @@ const PedPendientes = ({ ped, set, change }) => {
                   );
                 })}
               <span>TOTAL DEL PEDIDO ${pedido.totalPagar}</span>
+              <span>TIPO DE ENVIO: {pedido.entrega}</span>
               <button onClick={() => setEnviado(pedido)}>
                 MARCAR COMO PREPARADO
               </button>

@@ -1298,7 +1298,7 @@ let productsBase = [
     promo: false,
     descuento: 0,
     talles: {
-      Unico: 1,
+      Unico: 0,
     },
     color: "Motivos Selva",
     descripcion: "Los productos se venden por separado",
@@ -2927,10 +2927,10 @@ let productsBase = [
     price: 399,
     priceTar: 599,
     marca: "farolera",
-    promo: true,
-    descuento: 50,
+    promo: false,
+    descuento: 0,
     talles: {
-      Unico: 11,
+      Unico: 8,
     },
     color: "Blanco",
     descripcion: "Extensores para body",
@@ -3718,7 +3718,7 @@ let productsBase = [
     promo: false,
     descuento: 0,
     talles: {
-      Unico: 2,
+      Unico: 1,
     },
     color: "Amarillo",
     descripcion: "Sonaja Coneja Verde",
