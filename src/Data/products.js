@@ -3915,6 +3915,6 @@ let productsBase = [
 
 export const products = productsBase.map((product) => ({
   ...product,
-  price: Math.round(product.price * 1.2),
-  priceTar: Math.round(product.priceTar * 1.2),
+  price: Math.round(product.price * 1.2 * 1.2),
+  priceTar: Math.round(product.priceTar * 1.2 * 1.2),
 }));
