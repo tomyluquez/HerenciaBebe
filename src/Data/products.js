@@ -6,7 +6,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -33,7 +33,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -60,7 +60,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -87,7 +87,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -114,7 +114,7 @@ let productsBase = [
     priceTar: 6499,
     marca: "minis",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -141,7 +141,7 @@ let productsBase = [
     priceTar: 17159,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -169,7 +169,7 @@ let productsBase = [
     priceTar: 7299,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -195,7 +195,7 @@ let productsBase = [
     priceTar: 9899,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -221,7 +221,7 @@ let productsBase = [
     priceTar: 17159,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -247,7 +247,7 @@ let productsBase = [
     priceTar: 7299,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -273,7 +273,7 @@ let productsBase = [
     priceTar: 9899,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -299,7 +299,7 @@ let productsBase = [
     priceTar: 17159,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -326,7 +326,7 @@ let productsBase = [
     priceTar: 7299,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -352,7 +352,7 @@ let productsBase = [
     priceTar: 9899,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -379,7 +379,7 @@ let productsBase = [
     priceTar: 17159,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -406,7 +406,7 @@ let productsBase = [
     priceTar: 7299,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -432,7 +432,7 @@ let productsBase = [
     priceTar: 9899,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -459,7 +459,7 @@ let productsBase = [
     priceTar: 17159,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -486,7 +486,7 @@ let productsBase = [
     priceTar: 7299,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -512,7 +512,7 @@ let productsBase = [
     priceTar: 9899,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -539,7 +539,7 @@ let productsBase = [
     priceTar: 17159,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -566,7 +566,7 @@ let productsBase = [
     priceTar: 7299,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -592,7 +592,7 @@ let productsBase = [
     priceTar: 9899,
     marca: "minis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -712,7 +712,7 @@ let productsBase = [
     priceTar: 9899,
     marca: "farolera",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1061,7 +1061,7 @@ let productsBase = [
     priceTar: 9949,
     marca: "farolera",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 1,
@@ -1453,7 +1453,7 @@ let productsBase = [
     priceTar: 4899,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1479,7 +1479,7 @@ let productsBase = [
     priceTar: 4899,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1505,7 +1505,7 @@ let productsBase = [
     priceTar: 4899,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -1528,7 +1528,7 @@ let productsBase = [
     priceTar: 5099,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1555,7 +1555,7 @@ let productsBase = [
     priceTar: 5099,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -1578,7 +1578,7 @@ let productsBase = [
     priceTar: 6599,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1606,7 +1606,7 @@ let productsBase = [
     priceTar: 6599,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1634,7 +1634,7 @@ let productsBase = [
     priceTar: 6599,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1660,7 +1660,7 @@ let productsBase = [
     priceTar: 3199,
     marca: "mumis",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1687,7 +1687,7 @@ let productsBase = [
     priceTar: 3199,
     marca: "mumis",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1713,7 +1713,7 @@ let productsBase = [
     priceTar: 6099,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 1,
@@ -1739,7 +1739,7 @@ let productsBase = [
     priceTar: 5699,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1765,7 +1765,7 @@ let productsBase = [
     priceTar: 8899,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1791,7 +1791,7 @@ let productsBase = [
     priceTar: 8899,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1817,7 +1817,7 @@ let productsBase = [
     priceTar: 5599,
     marca: "bunny",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1843,7 +1843,7 @@ let productsBase = [
     priceTar: 7599,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1869,7 +1869,7 @@ let productsBase = [
     priceTar: 7599,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -1895,7 +1895,7 @@ let productsBase = [
     priceTar: 4599,
     marca: "bunny",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1921,7 +1921,7 @@ let productsBase = [
     priceTar: 4599,
     marca: "bunny",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1947,7 +1947,7 @@ let productsBase = [
     priceTar: 3099,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -1974,7 +1974,7 @@ let productsBase = [
     priceTar: 3099,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2000,7 +2000,7 @@ let productsBase = [
     priceTar: 3099,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2066,7 +2066,7 @@ let productsBase = [
     priceTar: 6199,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2093,7 +2093,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2120,7 +2120,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2147,7 +2147,7 @@ let productsBase = [
     priceTar: 6199,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2175,7 +2175,7 @@ let productsBase = [
     priceTar: 6199,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2203,7 +2203,7 @@ let productsBase = [
     priceTar: 6199,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -2229,7 +2229,7 @@ let productsBase = [
     priceTar: 6199,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -2256,7 +2256,7 @@ let productsBase = [
     priceTar: 7699,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2282,7 +2282,7 @@ let productsBase = [
     priceTar: 7699,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2309,7 +2309,7 @@ let productsBase = [
     priceTar: 5499,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2356,7 +2356,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2383,7 +2383,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2410,7 +2410,7 @@ let productsBase = [
     priceTar: 11199,
     marca: "mumis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2489,7 +2489,7 @@ let productsBase = [
     priceTar: 5199,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2516,7 +2516,7 @@ let productsBase = [
     priceTar: 5999,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -2539,7 +2539,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2565,7 +2565,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 2,
@@ -2592,7 +2592,7 @@ let productsBase = [
     priceTar: 7499,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2619,7 +2619,7 @@ let productsBase = [
     priceTar: 7399,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2645,7 +2645,7 @@ let productsBase = [
     priceTar: 7399,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2672,7 +2672,7 @@ let productsBase = [
     priceTar: 11199,
     marca: "ochila",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2700,7 +2700,7 @@ let productsBase = [
     priceTar: 11199,
     marca: "ochila",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2727,7 +2727,7 @@ let productsBase = [
     priceTar: 11199,
     marca: "ochila",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2754,7 +2754,7 @@ let productsBase = [
     priceTar: 11199,
     marca: "ochila",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2808,7 +2808,7 @@ let productsBase = [
     priceTar: 5399,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2836,7 +2836,7 @@ let productsBase = [
     priceTar: 3799,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "Recien nacidos": 0,
     },
@@ -2853,7 +2853,7 @@ let productsBase = [
     priceTar: 7199,
     marca: "bunny",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -2876,7 +2876,7 @@ let productsBase = [
     priceTar: 7199,
     marca: "bunny",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2902,7 +2902,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "farolera",
     promo: true,
-    descuento: 40,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -2948,7 +2948,7 @@ let productsBase = [
     priceTar: 1699,
     marca: "farolera",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       Unico: 2,
     },
@@ -2965,7 +2965,7 @@ let productsBase = [
     priceTar: 1699,
     marca: "farolera",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       Unico: 1,
     },
@@ -3047,7 +3047,7 @@ let productsBase = [
     priceTar: 8799,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -3073,7 +3073,7 @@ let productsBase = [
     priceTar: 8799,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3099,7 +3099,7 @@ let productsBase = [
     priceTar: 4299,
     marca: "mumis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3126,7 +3126,7 @@ let productsBase = [
     priceTar: 4399,
     marca: "mumis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3152,7 +3152,7 @@ let productsBase = [
     priceTar: 5299,
     marca: "mumis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3180,7 +3180,7 @@ let productsBase = [
     priceTar: 4299,
     marca: "mumis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3206,7 +3206,7 @@ let productsBase = [
     priceTar: 4299,
     marca: "mumis",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3232,7 +3232,7 @@ let productsBase = [
     priceTar: 4799,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3259,7 +3259,7 @@ let productsBase = [
     priceTar: 4799,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3286,7 +3286,7 @@ let productsBase = [
     priceTar: 6599,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3313,7 +3313,7 @@ let productsBase = [
     priceTar: 6599,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -3340,7 +3340,7 @@ let productsBase = [
     priceTar: 4799,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -3367,7 +3367,7 @@ let productsBase = [
     priceTar: 4799,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -3393,7 +3393,7 @@ let productsBase = [
     priceTar: 4799,
     marca: "sabi",
     promo: true,
-    descuento: 50,
+    descuento: 30,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -3419,7 +3419,7 @@ let productsBase = [
     priceTar: 5099,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3446,7 +3446,7 @@ let productsBase = [
     priceTar: 4299,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3472,7 +3472,7 @@ let productsBase = [
     priceTar: 4299,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3499,7 +3499,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3526,7 +3526,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "farolera",
     promo: true,
-    descuento: 40,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3553,7 +3553,7 @@ let productsBase = [
     priceTar: 7899,
     marca: "bunny",
     promo: true,
-    descuento: 40,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 1,
@@ -3602,7 +3602,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 40,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3629,7 +3629,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "ochila",
     promo: true,
-    descuento: 40,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3837,7 +3837,7 @@ let productsBase = [
     priceTar: 7199,
     marca: "bunny",
     promo: true,
-    descuento: 40,
+    descuento: 20,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
@@ -3863,7 +3863,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 1,
       "3 - 6 Meses": 0,
@@ -3891,7 +3891,7 @@ let productsBase = [
     priceTar: 7999,
     marca: "farolera",
     promo: true,
-    descuento: 30,
+    descuento: 10,
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
