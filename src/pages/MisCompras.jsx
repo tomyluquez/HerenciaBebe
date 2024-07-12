@@ -53,6 +53,10 @@ const MisCompras = () => {
   ) {
     return (
       <div style={{ paddingTop: "83px" }}>
+        <div>
+          <button>Actualizar precios</button>
+          <input type="text" placeholder="porcentaje" />
+        </div>
         <Admin user={userActive} />
       </div>
     );
