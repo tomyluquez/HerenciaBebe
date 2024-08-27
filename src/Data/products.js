@@ -3913,8 +3913,20 @@ let productsBase = [
   },
 ];
 
-export const products = productsBase.map((product) => ({
-  ...product,
-  price: Math.round(product.price * 1.2 * 1.2 * 1.1),
-  priceTar: Math.round(product.priceTar * 1.2 * 1.2 * 1.1),
-}));
+export const products = productsBase.map((product) => {
+  let price;
+  let priceTar;
+  if(product.category === 'Amigurumis'){
+    price = Math.round(product.price * 1.2 * 1.2 * 1.1 * 1.5);
+    priceTar = Math.round(product.priceTar * 1.2 * 1.2 * 1.1 *1.5)
+  } else {
+    price = Math.round(product.price * 1.2 * 1.2 * 1.1 * 1.15);
+    priceTar = Math.round(product.priceTar * 1.2 * 1.2 * 1.1 *1.15)
+  }
+  return {
+    ...product,
+    price,
+    priceTar,
+  }
+
+});
