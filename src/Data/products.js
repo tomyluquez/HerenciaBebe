@@ -144,12 +144,12 @@ let productsBase = [
     descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
-      "3 - 6 Meses": 1,
+      "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
-      "9 - 12 Meses": 1,
+      "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
-      "18 - 24 Meses": 1,
-      "24 - 36 Meses": 1,
+      "18 - 24 Meses": 0,
+      "24 - 36 Meses": 0,
     },
     color: "Blanco Corazones",
     descripcion: "Buzo largo liso de friza color - Blanco Corazones",
@@ -172,12 +172,12 @@ let productsBase = [
     descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
-      "3 - 6 Meses": 1,
+      "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
-      "9 - 12 Meses": 1,
+      "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
-      "18 - 24 Meses": 1,
-      "24 - 36 Meses": 1,
+      "18 - 24 Meses": 0,
+      "24 - 36 Meses": 0,
     },
     color: "Blanco Corazones",
     descripcion: "Pantalon largo liso de friza color - Blanco Corazones",
@@ -224,12 +224,12 @@ let productsBase = [
     descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
-      "3 - 6 Meses": 1,
+      "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
-      "9 - 12 Meses": 1,
+      "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
-      "18 - 24 Meses": 1,
-      "24 - 36 Meses": 1,
+      "18 - 24 Meses": 0,
+      "24 - 36 Meses": 0,
     },
     color: "Blanco Osos",
     descripcion: "Buzo largo liso de friza color - Blanco Osos",
@@ -250,12 +250,12 @@ let productsBase = [
     descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
-      "3 - 6 Meses": 1,
+      "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
-      "9 - 12 Meses": 1,
+      "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
-      "18 - 24 Meses": 1,
-      "24 - 36 Meses": 1,
+      "18 - 24 Meses": 0,
+      "24 - 36 Meses": 0,
     },
     color: "Blanco Osos",
     descripcion: "Pantalon largo liso de friza color - Blanco Osos",
@@ -303,9 +303,9 @@ let productsBase = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
-      "12 - 18 Meses": 1,
+      "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
       "24 - 36 Meses": 0,
     },
@@ -330,11 +330,11 @@ let productsBase = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
-      "12 - 18 Meses": 1,
+      "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
-      "24 - 36 Meses": 1,
+      "24 - 36 Meses": 0,
     },
     color: "Rosa",
     descripcion: "Pantalon largo liso de friza color - Rosa",
@@ -383,11 +383,11 @@ let productsBase = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
-      "12 - 18 Meses": 1,
+      "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
-      "24 - 36 Meses": 1,
+      "24 - 36 Meses": 0,
     },
     color: "Camel",
     descripcion: "Buzo largo liso de friza color - Camel",
@@ -410,11 +410,11 @@ let productsBase = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
-      "12 - 18 Meses": 1,
+      "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
-      "24 - 36 Meses": 1,
+      "24 - 36 Meses": 0,
     },
     color: "Camel",
     descripcion: "Pantalon largo liso de friza color - Camel",
@@ -463,11 +463,11 @@ let productsBase = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
-      "12 - 18 Meses": 1,
+      "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
-      "24 - 36 Meses": 1,
+      "24 - 36 Meses": 0,
     },
     color: "Azul Francia",
     descripcion: "Buzo largo liso de friza color - Azul Francia",
@@ -490,11 +490,11 @@ let productsBase = [
     talles: {
       "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
-      "6 - 9 Meses": 1,
+      "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
-      "12 - 18 Meses": 1,
+      "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
-      "24 - 36 Meses": 1,
+      "24 - 36 Meses": 0,
     },
     color: "Azul Francia",
     descripcion: "Pantalon largo liso de friza color - Azul Francia",
@@ -542,9 +542,9 @@ let productsBase = [
     descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
-      "3 - 6 Meses": 1,
+      "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
-      "9 - 12 Meses": 1,
+      "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
       "24 - 36 Meses": 0,
@@ -569,9 +569,9 @@ let productsBase = [
     descuento: 30,
     talles: {
       "0 - 3 Meses": 0,
-      "3 - 6 Meses": 1,
+      "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
-      "9 - 12 Meses": 1,
+      "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
       "18 - 24 Meses": 0,
       "24 - 36 Meses": 0,
@@ -814,7 +814,7 @@ let productsBase = [
     promo: false,
     descuento: 0,
     talles: {
-      "0 - 3 Meses": 1,
+      "0 - 3 Meses": 0,
       "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
@@ -842,7 +842,7 @@ let productsBase = [
     descuento: 0,
     talles: {
       "0 - 3 Meses": 0,
-      "3 - 6 Meses": 1,
+      "3 - 6 Meses": 0,
       "6 - 9 Meses": 0,
       "9 - 12 Meses": 0,
       "12 - 18 Meses": 0,
@@ -3916,17 +3916,16 @@ let productsBase = [
 export const products = productsBase.map((product) => {
   let price;
   let priceTar;
-  if(product.category === 'Amigurumis'){
+  if (product.category === "Amigurumis") {
     price = Math.round(product.price * 1.2 * 1.2 * 1.1 * 1.5);
-    priceTar = Math.round(product.priceTar * 1.2 * 1.2 * 1.1 *1.5)
+    priceTar = Math.round(product.priceTar * 1.2 * 1.2 * 1.1 * 1.5);
   } else {
     price = Math.round(product.price * 1.2 * 1.2 * 1.1 * 1.15);
-    priceTar = Math.round(product.priceTar * 1.2 * 1.2 * 1.1 *1.15)
+    priceTar = Math.round(product.priceTar * 1.2 * 1.2 * 1.1 * 1.15);
   }
   return {
     ...product,
     price,
     priceTar,
-  }
-
+  };
 });
